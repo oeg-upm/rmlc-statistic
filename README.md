@@ -18,7 +18,7 @@ java -jar target/rmlc-statistic-1.0.jar -m path -c path -s number -e number
 Where the arguments are:
 + -m: Path to the mapping with iterators. **Mandatory**
 + -c: Path to the CSV file. **Mandatory**
-+ -s: The number of the column where the process should start. **Mandatory**
-+ -e: The number of the column where the process should end. **Mandatory**
++ -s: The number of the column where the process starts. **Mandatory**
++ -e: The number of the column where the process ends. **Mandatory**
 
-The resulted R2RML mapping will be in the path of the mapping file with the same name and with the extension r2rml.ttl
+The resulted R2RML mapping will be in the path of the mapping file with the same name but with an r2rml.ttl extension
