@@ -14,7 +14,7 @@
 @prefix sltsv: <http://w3id.org/sri-lanka/tourism/cube-vocab/> .
 @prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
-
+@prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
 <TriplesMap201601>
   # a rr:TriplesMap;
@@ -72,7 +72,6 @@
   ];
 .
 
-
 <TriplesMap201602>
   # a rr:TriplesMap;
 
@@ -128,7 +127,6 @@
     ];
   ];
 .
-
 
 <TriplesMap201603>
   # a rr:TriplesMap;
@@ -186,7 +184,6 @@
   ];
 .
 
-
 <TriplesMap201604>
   # a rr:TriplesMap;
 
@@ -242,7 +239,6 @@
     ];
   ];
 .
-
 
 <TriplesMap201605>
   # a rr:TriplesMap;
@@ -300,7 +296,6 @@
   ];
 .
 
-
 <TriplesMap201606>
   # a rr:TriplesMap;
 
@@ -356,7 +351,6 @@
     ];
   ];
 .
-
 
 <TriplesMap201607>
   # a rr:TriplesMap;
@@ -414,7 +408,6 @@
   ];
 .
 
-
 <TriplesMap201608>
   # a rr:TriplesMap;
 
@@ -470,7 +463,6 @@
     ];
   ];
 .
-
 
 <TriplesMap201609>
   # a rr:TriplesMap;
@@ -528,7 +520,6 @@
   ];
 .
 
-
 <TriplesMap201610>
   # a rr:TriplesMap;
 
@@ -585,7 +576,6 @@
   ];
 .
 
-
 <TriplesMap201611>
   # a rr:TriplesMap;
 
@@ -641,7 +631,6 @@
     ];
   ];
 .
-
 
 <TriplesMap201612>
   # a rr:TriplesMap;
