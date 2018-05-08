@@ -21,7 +21,7 @@
 
   rr:logicalTable [
     rr:tableName "\"2016-P21\"";
-    rmlc:columns ["Jan","Mar","Dec"];
+    rmlc:columns ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   ];
 
   rr:subjectMap [
