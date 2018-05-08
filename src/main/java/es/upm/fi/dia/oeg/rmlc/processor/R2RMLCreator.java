@@ -8,10 +8,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 
 /**
- * RMLC for RDF Data Cube
+ * RMLC
  * @author dchaves
  */
 
@@ -19,6 +20,8 @@ public class R2RMLCreator {
 
 
     private String[] headers;
+    private ArrayList<String> mappingColumns;
+    private boolean processType;
     private Integer start;
     private Integer end;
     private String rmlcMapping;
@@ -28,40 +31,67 @@ public class R2RMLCreator {
     public R2RMLCreator (String csvPath, String mapping){
         log.info("Starting the process for creating R2RML mappings based on statistics CSV");
         this.rmlcMapping = mapping;
-        readCSVHeaders(csvPath);
+        mappingColumns = new ArrayList<>();
         this.start = null;
         this.end = null;
-        readStartEnd();
+        readCSVHeaders(csvPath);
+        readRange();
     }
 
     public String createR2RML(){
         log.info("Starting RMLC to R2RML conversion");
-        StringBuilder r2rmlMapping = new StringBuilder();
-        if(start==null || end ==null){
-            log.error("Check the start and end columns in the RMLC mapping, they do not exist");
-        }
-        else {
-            Integer iterations = end - start + 2;
-            ArrayList<String> mappingLines = readAndRemovePrefix(r2rmlMapping);
-            for (Integer i = 1; i < iterations; i++) {
-                ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
-                for (String line : auxMappingLines) {
-                    if (line.matches(".*\\{\\$i}.*")) {
-                        if (i < 10)
-                            line = line.replace("{$i}", "0" + i.toString());
-                        else
-                            line = line.replace("{$i}", i.toString());
-                    }
-                    if (line.matches(".*\\{\\$i.name}.*")) {
-                        line = line.replace("{$i.name}", headers[start].toUpperCase());
-                    }
-                    if (!line.matches(".*rmlc.*"))
-                        r2rmlMapping.append(line + "\n");
-                }
-                start++;
-            }
+        String r2rmlMapping="";
+        if((start!=null && end !=null) || !mappingColumns.isEmpty()){
+            if(processType)
+                r2rmlMapping = createR2RMLbyRange();
+            else
+                r2rmlMapping = createR2RMLbyColumns();
             log.info("Conversion completed!");
         }
+        else if(!processType){
+            log.error("Check the rmlc:columns in the RMLC mapping");
+        }
+        else if(processType){
+            log.error("Check the rmlc:columnRange in the RMLC mapping");
+        }
+        return r2rmlMapping;
+    }
+
+    private String createR2RMLbyRange(){
+        Integer iterations = end - start + 2;
+        StringBuilder r2rmlMapping = new StringBuilder();
+        ArrayList<String> mappingLines = readAndRemovePrefix(r2rmlMapping);
+        for (int i = 1; i < iterations; i++) {
+            ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
+            for (String line : auxMappingLines) {
+                if (line.matches(".*\\{\\$name}.*")) {
+                    line = line.replace("{$name}", headers[start].toUpperCase());
+                }
+                if (!line.matches(".*rmlc.*"))
+                    r2rmlMapping.append(line + "\n");
+            }
+            start++;
+        }
+        return r2rmlMapping.toString();
+    }
+
+    private String createR2RMLbyColumns(){
+        Integer iterations = mappingColumns.size();
+        StringBuilder r2rmlMapping = new StringBuilder();
+        ArrayList<String> mappingLines = readAndRemovePrefix(r2rmlMapping);
+        for(int i=0; i < iterations ; i++){
+            ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
+            for (String line : auxMappingLines) {
+                if (line.matches(".*\\{\\$name}.*")) {
+                    line = line.replace("{$name}", mappingColumns.get(i).toUpperCase());
+                }
+                if (!line.matches(".*rmlc.*"))
+                    r2rmlMapping.append(line + "\n");
+            }
+        }
+
+
+
         return r2rmlMapping.toString();
     }
 
@@ -92,26 +122,37 @@ public class R2RMLCreator {
         log.info("CSV headers read");
     }
 
-    private void readStartEnd(){
+    private void readRange(){
         String mappingLines[] = rmlcMapping.split("\n");
-        String startColumn="",endColumn="";
         for(String line : mappingLines){
-            if(line.matches(".*rmlc:columnStart.*")){
-                startColumn = line.split("\"")[1];
+            if(line.matches(".*rmlc:columnRange.*")){
+                String startColumn = line.split("\"")[1];
+                String endColumn = line.split("\"")[3];
+                for(int i=0; i<headers.length ; i++){
+                    if(headers[i].equals(startColumn)){
+                        this.start = i;
+                    }
+                    else if(headers[i].equals(endColumn)){
+                        this.end = i;
+                    }
+                }
+                processType = true;
+                break;
             }
-            else if(line.matches(".*rmlc:columnEnd.*")){
-                endColumn = line.split("\"")[1];
+            else if(line.matches(".*rmlc:columns.*")){
+                StringTokenizer st = new StringTokenizer(line,"[");
+                st.nextToken();
+                st = new StringTokenizer(st.nextToken(),"]");
+                st = new StringTokenizer(st.nextToken(),",");
+                while(st.hasMoreTokens()){
+                    mappingColumns.add(st.nextToken().replace("\"",""));
+                }
+                processType=false;
+                break;
             }
         }
 
-        for(int i=0; i<headers.length ; i++){
-            if(headers[i].equals(startColumn)){
-                this.start = i;
-            }
-            else if(headers[i].equals(endColumn)){
-                this.end = i;
-            }
-        }
+
     }
 
 

@@ -16,18 +16,17 @@
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
 @prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
-<TriplesMap2016{$i}>
+<TriplesMap2016{$name}>
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\"";
-      rmlc:columnStart "Jan";
-      rmlc:columnEnd "Dec";
+    rr:tableName "\"2016-P21\"";
+    rmlc:columns ["Jan","Mar","Dec"];
   ];
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{$i}-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{$name}-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -59,8 +58,8 @@
   rr:predicateObjectMap[
 	rr:predicate sltsv:month;
 	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{$i.name}";
+    rr:termType rr:IRI;
+    rr:constant "http://reference.data.gov.uk/def/intervals/{$name}";
     ];
   ];
   
@@ -68,7 +67,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "{$i.name}";
+		rr:column "{$name}";
 		rr:datatype xsd:integer;
     ];
   ];

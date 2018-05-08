@@ -1,12 +1,17 @@
-# RMLC for RDF Data Cube
+# RMLC Iterator
 Is each column of your statistic CSV file a R2RML mapping? Do you repeat the mapping multiple times changing the 
 identifiers and the name of the column? Reduce the complexity of your mappings creating a single RMLC mapping
-with an iterator. The properties of the iterator are:
-- a global variable where its value will be from 01 to the total number of iterations ($i).
-- a local variable to get the name of each column ($i.name). 
+with an iterator. The iterator is a local variable where its value will be the name of each column ($name).
 
-Take a look of an example: the [RMLC mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21.rmlc.ttl),
-the [statistic CSV dataset](https://github.com/dachafra/rmlc-statistic/blob/master/examples/csv/2016-P21.csv) and the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21.r2rml.ttl).
+You can define the iterated columns using two different properties:
++ rmlc:columns : where you define the name of the CSV columns where the mapping will iterate. Check an example of a mapping
+with this property [here](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-columns.rmlc.ttl) and
+the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-columns.r2rml.ttl)
++ rmlc:columnRange : where you define a range between two CSV columns where the mapping will iterate. Check an 
+example of a mapping with this property [here](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.rmlc.ttl)
+and the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.r2rml.ttl)
+
+
 
 ## How to run it?
 ```
