@@ -20,7 +20,9 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
+      rmlc:columnStart "Jan";
+      rmlc:columnEnd "Dec";
   ];
 
   rr:subjectMap [

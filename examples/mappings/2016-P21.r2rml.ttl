@@ -20,7 +20,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -77,7 +77,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -134,7 +134,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -191,7 +191,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -248,7 +248,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -305,7 +305,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -362,7 +362,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -419,7 +419,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -476,7 +476,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -533,7 +533,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -590,7 +590,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [
@@ -647,7 +647,7 @@
   # a rr:TriplesMap;
 
   rr:logicalTable [
-      rr:tableName "\"2016-P21\""
+      rr:tableName "\"2016-P21\"";
   ];
 
   rr:subjectMap [

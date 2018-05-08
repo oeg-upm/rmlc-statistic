@@ -18,17 +18,15 @@ public class Main
         BasicConfigurator.configure();
         CommandLine commandLine = CommandLineProcessor.parseArguments(args);
 
-        if(commandLine.getOptions().length != 4){
+        if(commandLine.getOptions().length != 2){
             CommandLineProcessor.displayHelp();
         }
 
         String mapping = commandLine.getOptionValue("m");
         String csv = commandLine.getOptionValue("c");
-        Integer start = Integer.parseInt(commandLine.getOptionValue("s"));
-        Integer end = Integer.parseInt(commandLine.getOptionValue("e"));
 
-        R2RMLCreator creator = new R2RMLCreator(csv);
-        MappingIO.writeMapping(mapping,creator.createR2RML(MappingIO.readMapping(mapping),start,end));
+        R2RMLCreator creator = new R2RMLCreator(csv,MappingIO.readMapping(mapping));
+        MappingIO.writeMapping(mapping,creator.createR2RML());
 
     }
 }

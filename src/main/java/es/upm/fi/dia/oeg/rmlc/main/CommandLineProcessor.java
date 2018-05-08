@@ -37,10 +37,6 @@ public class CommandLineProcessor {
                 "the URI of the mapping file (required)");
         cliOptions.addOption("c", "csv file", true,
                 "the URI of the csv file (required)");
-        cliOptions.addOption("s", "start column", true,
-                "the number of the column where the process should start (required)");
-        cliOptions.addOption("e", "end column", true,
-                "the number of the column where the process should end (required)");
 
         return cliOptions;
     }
