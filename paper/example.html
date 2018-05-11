@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Providing Reliable Access to Real-Time and Historic Public Transport Data Using Linked Connections</title>
+    <link rel="stylesheet" href="media/css/do.css" media="all" />
+    <link rel="stylesheet" href="media/css/lncs.css" media="all" title="LNCS" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+    <script src="scripts/simplerdf.js"></script>
+    <script src="scripts/medium-editor.min.js"></script>
+    <script src="scripts/medium-editor-tables.min.js"></script>
+    <script src="scripts/do.js"></script>
+</head>
+
+<body about="" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# rdfs: http://www.w3.org/2000/01/rdf-schema# owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# dcterms: http://purl.org/dc/terms/ dctypes: http://purl.org/dc/dcmitype/ foaf: http://xmlns.com/foaf/0.1/ v: http://www.w3.org/2006/vcard/ns# pimspace: http://www.w3.org/ns/pim/space# cc: https://creativecommons.org/ns# skos: http://www.w3.org/2004/02/skos/core# prov: http://www.w3.org/ns/prov# qb: http://purl.org/linked-data/cube# schema: http://schema.org/ void: http://rdfs.org/ns/void# rsa: http://www.w3.org/ns/auth/rsa# cert: http://www.w3.org/ns/auth/cert# cal: http://www.w3.org/2002/12/cal/ical# wgs: http://www.w3.org/2003/01/geo/wgs84_pos# org: http://www.w3.org/ns/org# biblio: http://purl.org/net/biblio# bibo: http://purl.org/ontology/bibo/ book: http://purl.org/NET/book/vocab# ov: http://open.vocab.org/terms/ sioc: http://rdfs.org/sioc/ns# doap: http://usefulinc.com/ns/doap# dbr: http://dbpedia.org/resource/ dbp: http://dbpedia.org/property/ sio: http://semanticscience.org/resource/ opmw: http://www.opmw.org/ontology/ deo: http://purl.org/spar/deo/ doco: http://purl.org/spar/doco/ cito: http://purl.org/spar/cito/ fabio: http://purl.org/spar/fabio/ oa: http://www.w3.org/ns/oa# as: https://www.w3.org/ns/activitystreams# ldp: http://www.w3.org/ns/ldp# solid: http://www.w3.org/ns/solid/terms# acl: http://www.w3.org/ns/auth/acl# dio: https://w3id.org/dio#"
+    typeof="schema:CreativeWork sioc:Post prov:Entity">
+    <main>
+        <article about="" typeof="schema:ScholarlyArticle">
+            <h1 property="schema:name">Providing Reliable Access to Real-Time and Historic Public Transport Data Using Linked Connections</h1>
+
+            <div id="authors">
+                <dl id="author-name">
+                    <dt>Authors</dt>
+                    <dd id="author-1"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#Julian-Rojas" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Julián Rojas</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                    <dd id="author-2"><span about="" rel="schema:contributor"><a about="#David-Chaves" typeof="schema:Person" rel="schema:url" property="schema:name" href="http://mayor2.dia.fi.upm.es/oeg-upm/index.php/en/phdstudents/385-dchaves/index.html">David Chaves</a></span><sup><a href="#author-org-2">2</a></sup></dd>
+                    <dd id="author-3"><span about="" rel="schema:contributor"><a about="#https://pietercolpaert.be/#me" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://pietercolpaert.be/#me">Pieter Colpaert</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                    <dd id="author-4"><span about="" rel="schema:contributor"><a about="#https://ruben.verborgh.org/profile/#me" typeof="schema:Person" rel="schema:url" property="schema:name" href="https://ruben.verborgh.org/profile/#me">Ruben Verborgh</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                    <dd id="author-4"><span about="" rel="schema:contributor"><a about="#Erik-Mannens" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Erik Mannens</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                </dl>
+
+                <ul id="author-org">
+                    <li id="author-org-1"><sup>1</sup><a about="#IDLab" typeof="schema:Organization" property="schema:name" rel="schema:url" href="https://www.ugent.be/ea/idlab/en">IDLab, Department of Electronics and Information Systems, Ghent University - imec</a></li>
+                </ul>
+
+                <ul id="author-email">
+                    <li id="author-email-a"><a about="#Julian-Rojas" rel="schema:email" href="mailto:julianandres.rojasmelendez@ugent.be">julianandres.rojasmelendez@ugent.be</a></li>
+                </ul>
+
+                <ul id="author-org">
+                    <li id="author-org-2"><sup>2</sup><a about="#UPM" typeof="schema:Organization" property="schema:name" rel="schema:url" href="http://mayor2.dia.fi.upm.es/oeg-upm/index.html">Ontology Engineering Group, Universidad Politécnica de Madrid</a>,
+                        <span class="country-name">Spain</span>
+                    </li>
+                </ul>
+
+                <ul id="author-email">
+                    <li id="author-email-a"><a about="#David-Chaves" rel="schema:email" href="mailto:dchaves@fi.upm.es">dchaves@fi.upm.es</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+                <section id="abstract">
+                    <h2>Abstract</h2>
+                    <div datatype="rdf:HTML" property="schema:abstract">
+                        <p>Using Linked Data based approaches, public transport companies are able to share their time tables
+                            and its updates in an affordable way while allow- ing user agents to perform multimodal route
+                            planning algorithms. Providing time table updates, usually published as data streams, means that
+                            data is being constantly modified and in the presence of large analytical queries, results might
+                            be affected due to the changing data. In this demo we introduce a mecha- nism to tackle this
+                            problem by guaranteeing that a user agent will always re- ceive version based responses, therefore
+                            ensuring data consistency. Such mech- anism also enables access to historical data that could
+                            be used for deep analysis of transport systems. However, how this data shall be archived, in
+                            order to keep this approach scalable and inexpensive is still a matter of study. In a demonstra-
+                            tor, we published and query data from the Belgium national train system (SNCB) and Madrid Regional
+                            Transport Consortium (CRTM). This paper rep- resents the first step towards establishing an affordable
+                            framework to publish reliable transport data.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="keywords">
+                    <h2>Keywords</h2>
+                    <div>
+                        <ul>
+                            <li>Semantic Web, Open Linked Data, Linked Data Fragments, Linked Connections, public transit, reliability,
+                                content negotiation.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="introduction" rel="schema:hasPart" resource="#introduction">
+                    <h2 property="schema:name">Introduction</h2>
+                    <div datatype="rdf:HTML" property="schema:description">
+                        <p>Open Transport Data publishers, such as a public transport company, can share their time tables and
+                            its updates for maximum reuse by studying the trade-offs introduced by the Linked Data Fragments
+                            axis [<a class="ref" href="#ref-1">1</a>]. Choosing a use-case specific fragmentation strategy,
+                            can result in a cost-efficient data publishing interface while still being able to evaluate queries.
+                            The Linked Connections (LC) framework [<a class="ref" href="#ref-2">2</a>] enables third parties
+                            to develop route planning algorithms that evaluate queries over different data sources, taking
+                            into account multiple modes of transport (e.g., train, bus or tram). To achieve this, the server
+                            interface only exposes a paged collection of an ordered public transit connections list.
+                        </p>
+
+                        <p>By updating these fragments, updates on the planned schedules can be handled through the LC framework
+                            as well. However, this means that data is constantly changing and if there is a large analytical
+                            query, its response might be affected in terms of reliability and data consistency. When a client
+                            would thus issue a large query, the data processed at the start of the query would be correct
+                            but might change at the end of the query evaluation. This could turn query results unreliable
+                            or even inconsistent.
+                        </p>
+
+                        <p>To tackle this issue, this demo introduces a mechanism provide time-based versions of data which
+                            ensures that a client will always get a true result for a given moment. Furthermore, having time-based
+                            versions of data enables access to historic data, allowing deep behavioral analysis of transport
+                            systems. We first describe the background, we then describe the implementation details of our
+                            approach and finally we present the set-up of our demonstrator.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="background" rel="schema:hasPart" resource="#backgorund">
+                    <h2 property="schema:name">Background</h2>
+                    <div datatype="rdf:HTML" property="schema:description">
+                        <p>In related work, the <em>General Transit Feed Specification</em> (GTFS)<sup><a href="#note-1">1</a></sup> 
+                            defines a set of rules to describe a transport system schedules using a CSV format. To handle
+                            data updates, GTFS-RT was introduced. In our approach we use GTFS and GFTS-RT feeds provided
+                            by public transport agencies as input data for our system.
+                        </p>
+
+                        <p>A connection in the LC framework is defined as hop from one transit stop to another, indicating location
+                            and time of departure, and location and time of arrival [<a class="ref" href="#ref-2">2</a>].
+                            Moreover, to provide context to HTTP user agents and link the terms and identifiers of GTFS and
+                            Connections to the Linked Open Data cloud, the Linked GTFS<sup><a href="#note-2">2</a></sup> 
+                            and LC<sup><a href="#note-3">3</a></sup> ontologies were introduced.
+                        </p>
+
+                        <p>The Memento Framework provides a mechanism to achieve a tighter integration between the present and
+                            past Web [<a class="ref" href="#ref-3">3</a>]. It introduces the <em>datetime</em> dimension
+                            for content-negotiation between a server and a client, allowing to access previous versions of
+                            a resource. The latest version of a resource is defined as the <em>original resource</em> URI-R.
+                            Previous versions of URI-R are defined as <em>Mementos</em> URI-M<em>i</em> (<em>i = 1...n</em>). 
+                            Memento defines different patterns of implementation, on this approach we use 
+                            <em>Pattern 1</em><sup><a href="#note-4">4</a></sup> for simplicity, but other patterns shall be 
+                            studied in future work such as the one described in [<a class="ref" href="#ref-4">4</a>].
+                        </p>
+                    </div>
+                </section>
+
+                <section id="implementation" rel="schema:hasPart" resource="#implementation">
+                    <h2 property="schema:name">Implementation</h2>
+                    <div datatype="rdf:HTML" property="schema:description">
+                        <p>The implementation for this demo was built on top of Node.JS and its source code is available on
+                            GitHub<sup><a href="#note-5">5</a></sup>. Figure 1 portraits a modular architecture of the system
+                            where main modules and their relations are presented.
+                        </p>
+
+                        <aside class="note">
+                            <p id="note-1">
+                                <sup>1</sup><a href="https://developers.google.com/transit/gtfs/">https://developers.google.com/transit/gtfs/</a>
+                            </p>
+                            <p id="note-2">
+                                <sup>2</sup><a href="http://vocab.gtfs.org/terms">http://vocab.gtfs.org/terms</a>
+                            </p>
+                            <p id="note-3">
+                                <sup>3</sup><a href="http://semweb.datasciencelab.be/ns/linkedconnections#">http://semweb.datasciencelab.be/ns/linkedconnections#</a>
+                            </p>
+                            <p id="note-4">
+                                <sup>4</sup>Memento is formally specified in RFC 7089 available at <a href="https://tools.ietf.org/rfc/rfc7089.txt">https://tools.ietf.org/rfc/rfc7089.txt</a>
+                            </p>
+                            <p id="note-5">
+                                <sup>5</sup><a href="https://github.com/julianrojas87/linked-connections-server">https://github.com/julianrojas87/linked-connections-server</a>
+                            </p>
+                        </aside>
+
+                        <p>The <em>Fetching Module</em>, as its name implies, is in charge of fetching GTFS and GTFS-RT feeds
+                            published by public transport agencies and converting them to LC sorted by departure time.
+                        </p>
+
+                        <p>The <em>Archiving Module</em> takes the LC of transport agencies and stores a time-based fragmentation
+                            of the data as paged files. Updates obtained from GTFS-RT feeds provide data concerning specific
+                            connections. Every time table update is annotated with a timestamp of the moment it was issued.
+                            Such annotation enables datetime based content-negotiation, as specified by Memento, to provide
+                            the state of connections at a certain given time.
+                        </p>
+
+                        <figure>
+                            <img height="304" src="media/images/fig1.png" width="400" />
+                            <figcaption>Modular architecture of the Linked Connections Server</figcaption>
+                        </figure>
+
+                        <p>The <em>Web Module</em> is a Express.js based web server which handles HTTP queries for connections
+                            with a given departure time. Once a query is received, the server retrieves the corresponding
+                            LC fragment for the specified departure time, then it retrieves the available updates at the
+                            time the query was issued for every connection in the fragment. This ensures that the client
+                            will always receive the state of all connections at the moment it issued its query, regardless
+                            of whether at the end of it, new data is already available. Finally a web representation of the
+                            LC is created and serialized in JSONLD format, containing links to other resources such as next
+                            and previous LC fragments using <em>hydra:nextPage</em><sup><a href="#note-6">6</a></sup> and
+                            <em>hydra:previousPage</em> links. Furthermore, by using the Accept-Datetime header, clients
+                            are able to query for connections status at a certain given time enabling access to historic
+                            data. An HTTP Cache Server may be configured on top of the LC Server in order to improve performance
+                            on recurrent queries.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="demonstrator" rel="schema:hasPart" resource="#demonstrator">
+                    <h2 property="schema:name">Demonstrator</h2>
+                    <div datatype="rdf:HTML" property="schema:description">
+                        <p>A demonstrator performing long analytical queries, in need of data consistency, can be viewed at
+                            <a href="http://tripscore.eu"><em>http://tripscore.eu</em></a><sup><a href="#note-7">7</a></sup>.
+                            The application aims at presenting to the user a list
+                        </p>
+
+                        <aside class="note">
+                            <p id="note-6">
+                                <sup>6</sup><em>hydra:</em> is a prefix that can be expanded to <a href="https://www.w3.org/ns/hydra/core#">https://www.w3.org/ns/hydra/core#</a>
+                            </p>
+                            <p id="note-7">
+                                <sup>7</sup>Source code available at <a href="https://github.com/oSoc17/oasis-frontend/">https://github.com/oSoc17/oasis-frontend/</a>
+                            </p>
+                        </aside>
+
+                        <p class="pagebreak">of trip alternatives for a specific route, with a calculated quality score based on predefined criteria
+                            such as maximum number of hops, acceptable delay times, minimum transfer times and delay 
+                            consistency<sup><a href="#note-8">8</a></sup>. The user can enter his/her preferences and query for 
+                            a route he/she frequently uses. The application will start querying for connections and will begin to 
+                            show alternatives to the user as it keeps processing the data. At the same time it will show the amount 
+                            of HTTP requests and responses handled and the number of LC analyzed.
+                        </p>
+
+                        <p>In order to calculate the quality score of a trip and its delay consistency, the application will
+                            query data spanning the last 5 weeks if available, demonstrating an use case for historic data.
+                            As mentioned before, this demo publishes and allows to query data from the Belgian railway company
+                            (SNCB) and Madrid transport system (CRTM).
+                        </p>
+                    </div>
+                </section>
+
+                <section id="conclusion" rel="schema:hasPart" resource="#conclusion">
+                    <h2 property="schema:name">Conclusion</h2>
+                    <div datatype="rdf:HTML" property="schema:description">
+                        <p>In this demo we used the LC framework to publish and query public transport data in an affordable
+                            way, and extended its capabilities by introducing a time based versioning mechanism that ensures
+                            reliable and consistent responses to large analytical queries. Furthermore, our approach also
+                            enables access to historical data that could be used to perform different type of analysis as
+                            showcased by our demo which calculates delay consistency over time for specific trips.
+                        </p>
+
+                        <p>This work represents a step forward towards a reliable and inexpensive mechanism to publish public
+                            transport data that allows multimodal route planning and analysis of historical data. However
+                            several issues still remain unattended such as studying the best approach to store LC in a scalable
+                            way, finding the best way to fragment transport data in order to improve performance of route
+                            planners and how the system may discover new transport datasets reliably.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="references">
+                    <h2>References</h2>
+                    <div>
+                        <ol>
+                            <li id="ref-1" property="schema:citation">Verborgh, R., Hartig, O., Meester, B.D., Haesendonck, G., Vocht, L.D., Sande, M.V., Cyganiak,
+                                R., Colpaert, P., Mannens, E., Walle, R.V.D.: Querying Datasets on the Web with High Availability.
+                                The Semantic Web – ISWC 2014 Lecture Notes in Computer Science. 180–196 (2014).</li>
+                            <li id="ref-2" property="schema:citation">Colpaert, P., Llaves, A., Verborgh, R., Corcho, O., Mannens, E., Van de Walle, R.: Intermodal
+                                public transit routing using Linked Connections. In: Proceedings of the 14th International
+                                Semantic Web Conference: Posters and Demos (2015).</li>
+                            <li id="ref-3" property="schema:citation">Van de Sompel, H., Sanderson, R., Nelson, M.L., Balakireva, L., Shankar, H., Ainsworth, S.: An
+                                HTTP-based Versioning Mechanism for Linked Data. CoRR abs/1003.3661 (2010).</li>
+                            <li id="ref-4" property="schema:citation">Sande, M.V., Colpaert, P., Nies, T.D., Mannens, E., Walle, R.V.D.: Publish data as time consistent
+                                web API with provenance. Proceedings of the 23rd International Conference on World Wide Web
+                                - WWW '14 Companion. (2014).</li>
+                        </ol>
+
+                        <aside class="note">
+                            <p id="note-8">
+                                <sup>8</sup>Refers to the behavior regarding delays for a specific connection during a given period of time.
+                            </p>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
