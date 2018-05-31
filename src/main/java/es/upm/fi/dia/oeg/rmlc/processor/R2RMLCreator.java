@@ -1,5 +1,6 @@
 package es.upm.fi.dia.oeg.rmlc.processor;
 
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -8,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
 
@@ -21,6 +23,7 @@ public class R2RMLCreator {
 
     private String[] headers;
     private ArrayList<String> mappingColumns;
+    private JSONObject dictionary;
     private boolean processType;
     private Integer start;
     private Integer end;
@@ -64,8 +67,14 @@ public class R2RMLCreator {
         for (int i = 1; i < iterations; i++) {
             ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
             for (String line : auxMappingLines) {
-                if (line.matches(".*\\{\\$name}.*")) {
-                    line = line.replace("{$name}", headers[start].toUpperCase());
+                if (line.matches(".*\\{\\$column}.*")) {
+                    line = line.replace("{$column}", headers[start].toUpperCase());
+                }
+                if (line.matches(".*\\{\\$alias}.*")) {
+                    if(dictionary.has(headers[start]))
+                        line = line.replace("{$alias}", dictionary.getString(headers[start]));
+                    else
+                        line = line.replace("{$alias}", headers[start]);
                 }
                 if (!line.matches(".*rmlc.*"))
                     r2rmlMapping.append(line + "\n");
@@ -82,8 +91,14 @@ public class R2RMLCreator {
         for(int i=0; i < iterations ; i++){
             ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
             for (String line : auxMappingLines) {
-                if (line.matches(".*\\{\\$name}.*")) {
-                    line = line.replace("{$name}", mappingColumns.get(i).toUpperCase());
+                if (line.matches(".*\\{\\$column}.*")) {
+                    line = line.replace("{$column}", mappingColumns.get(i).toUpperCase());
+                }
+                if (line.matches(".*\\{\\$alias}.*")) {
+                    if(dictionary.has(mappingColumns.get(i)))
+                        line = line.replace("{$alias}", dictionary.getString(mappingColumns.get(i)));
+                    else
+                        line = line.replace("{$alias}", mappingColumns.get(i));
                 }
                 if (!line.matches(".*rmlc.*"))
                     r2rmlMapping.append(line + "\n");
@@ -116,6 +131,7 @@ public class R2RMLCreator {
         log.info("Reading CSV headers");
         try {
             headers = Files.lines(myPath).map(s -> s.split(",")).findFirst().get();
+
         }catch (IOException e){
             log.error("Error reading the headers of the CSV file: "+e.getMessage());
         }
@@ -137,7 +153,7 @@ public class R2RMLCreator {
                     }
                 }
                 processType = true;
-                break;
+                log.info("Column range loaded");
             }
             else if(line.matches(".*rmlc:columns.*")){
                 StringTokenizer st = new StringTokenizer(line,"[");
@@ -148,11 +164,34 @@ public class R2RMLCreator {
                     mappingColumns.add(st.nextToken().replace("\"",""));
                 }
                 processType=false;
-                break;
+                log.info("Columns loaded");
+            }
+            else if(line.matches(".*rmlc:dictionary.*\\{.*\\};")){
+                StringTokenizer st = new StringTokenizer(line,"{");
+                st.nextToken();
+                dictionary = new JSONObject("{"+st.nextToken().replace(";",""));
+                log.info("Dictionary loaded");
+            }
+            else if(line.matches(".*rmlc:dictionary.*\".*")){
+                StringTokenizer st = new StringTokenizer(line,"\"");
+                st.nextToken();
+                dictionary = new JSONObject(readjson(st.nextToken().replace(";","")));
+                log.info("Dictionary loaded");
             }
         }
 
+    }
 
+    public String readjson(String path){
+        String content;
+        try {
+            content = new String(Files.readAllBytes(Paths.get(path)));
+        }catch (IOException e){
+            log.error("Error reading the json file: "+e.getMessage());
+            return null;
+        }
+        log.info("JSON file reading correctly");
+        return content;
     }
 
 
