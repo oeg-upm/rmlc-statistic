@@ -68,7 +68,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "{$name}";
+		rr:column "{$column}";
 		rr:datatype xsd:integer;
     ];
   ];
