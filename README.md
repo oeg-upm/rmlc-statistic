@@ -20,7 +20,7 @@ the dictionary to replace the values.
 
 ## How to run it?
 ```
-git clone https://github.com/oeg-upm/morph-rdb.git --branch 3.9.11
+git clone https://github.com/oeg-upm/morph-rdb.git --branch v3.9.11
 cd morph-rdb
 mvn clean install
 git clone https://github.com/oeg-upm/rmlc-statistic.git
