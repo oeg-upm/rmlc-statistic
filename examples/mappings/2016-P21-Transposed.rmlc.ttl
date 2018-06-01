@@ -16,20 +16,21 @@
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> .
 prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
-<TriplesMap{$column}>
+<TriplesMap{$alias}>
   # a rr:TriplesMap;
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
-	  rmlc:columnRange ["Canada","New_Zealand"];
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
+    rmlc:columnRange ["Canada","New_Zealand"];
+    rmlc:dictionary "/Users/dchaves/Documents/repos/rmlc-statistic/examples/json/countries.json";
   ];
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-{$column}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-{$alias}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -45,33 +46,33 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/{$column}";
+      rr:template "http://dbpedia.org/resource/{$alias}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "{$column}";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "{$column}";
+    rr:datatype xsd:integer;
     ];
   ];
 .

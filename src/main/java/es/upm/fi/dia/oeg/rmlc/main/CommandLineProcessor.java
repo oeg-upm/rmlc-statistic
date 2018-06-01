@@ -37,6 +37,8 @@ public class CommandLineProcessor {
                 "the URI of the mapping file (required)");
         cliOptions.addOption("c", "csv file", true,
                 "the URI of the csv file (required)");
+        cliOptions.addOption("r", "csv file", false,
+                "run materialization process");
         cliOptions.addOption("q", "query file", true,
                 "the URI of the SPARQL query file (optional)");
 
