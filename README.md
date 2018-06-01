@@ -1,7 +1,7 @@
 # RMLC Iterator
 Is each column of your statistic CSV file a R2RML mapping? Do you repeat the mapping multiple times changing the 
 identifiers and the name of the column? Reduce the complexity of your mappings creating a single RMLC mapping
-with an iterator. The iterator is a local variable where its value will be the name of each column ($name).
+with an iterator. The iterator is a local variable where its value will be the name of each column ($column).
 
 You can define the iterated columns using two different properties in the Logical Table Object:
 + rmlc:columns : where you define the name of the CSV columns where the mapping will iterate. Check an example of a mapping
@@ -11,7 +11,10 @@ the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/mas
 example of a mapping with this property [here](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.rmlc.ttl)
 and the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.r2rml.ttl)
 
-You can also define rmlc:dictionary property whose value must define a correlation between the columns and their alias in JSON format. A path to a [file in that format](https://github.com/dachafra/rmlc-statistic/blob/master/examples/json/dictionary.json) is also accepted.
+You can also define rmlc:dictionary property whose value must define a correlation between the columns and their alias in JSON format. 
+A path to a [file in that format](https://github.com/dachafra/rmlc-statistic/blob/master/examples/json/dictionary.json) is also accepted 
+in the mapping. If other word instead of the column name is needed, use the variable {$alias} in any place of the mapping. RMLC use
+the dictionary to replace the values.
 
 
 
