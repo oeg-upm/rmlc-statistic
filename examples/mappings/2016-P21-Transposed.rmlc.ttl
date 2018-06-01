@@ -25,7 +25,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
     """
     rmlc:columnRange ["Canada","New_Zealand"];
-    rmlc:dictionary "/Users/dchaves/Documents/repos/rmlc-statistic/examples/json/countries.json";
+    rmlc:dictionary "examples/json/countries.json";
   ];
 
   rr:subjectMap [
@@ -46,7 +46,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/{$alias}";
+      rr:constant "http://dbpedia.org/resource/{$alias}";
     ];
   ];
   
@@ -63,7 +63,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
   rr:predicate sltsv:month;
   rr:objectMap [
     rr:termType rr:IRI;
-    rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
