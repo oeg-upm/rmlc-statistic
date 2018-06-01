@@ -5,14 +5,14 @@ with an iterator. The iterator is a local variable where its value will be the n
 
 You can define the iterated columns using two different properties in the Logical Table Object:
 + rmlc:columns : where you define the name of the CSV columns where the mapping will iterate. Check an example of a mapping
-with this property [here](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-columns.rmlc.ttl) and
-the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-columns.r2rml.ttl)
+with this property [here](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/mappings/2016-P21-columns.rmlc.ttl) and
+the [resulted R2RML mapping](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/mappings/2016-P21-columns.r2rml.ttl)
 + rmlc:columnRange : where you define a range between two CSV columns where the mapping will iterate. Check an 
-example of a mapping with this property [here](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.rmlc.ttl)
+example of a mapping with this property [here](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.rmlc.ttl)
 and the [resulted R2RML mapping](https://github.com/dachafra/rmlc-statistic/blob/master/examples/mappings/2016-P21-range.r2rml.ttl)
 
 You can also define rmlc:dictionary property whose value must define a correlation between the columns and their alias in JSON format. 
-A path to a [file in that format](https://github.com/dachafra/rmlc-statistic/blob/master/examples/json/dictionary.json) is also accepted 
+A path to a [file in that format](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/json/dictionary.json) is also accepted 
 in the mapping. If other word instead of the column name is needed, use the variable {$alias} in any place of the mapping. RMLC use
 the dictionary to replace the values.
 
@@ -35,4 +35,4 @@ Where the arguments are:
 
 If you don't provide an SPARQL query, a materialization will be performed. 
 
-After the execution, you will find the results in the [examples/results](https://github.com/dachafra/rmlc-statistic/blob/master/examples/results) folder.
+After the execution, you will find the results in the [examples/results](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/results) folder.
