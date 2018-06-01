@@ -19,16 +19,23 @@ public class Main
         BasicConfigurator.configure();
         CommandLine commandLine = CommandLineProcessor.parseArguments(args);
 
-        if(commandLine.getOptions().length != 2){
+        if(commandLine.getOptions().length < 2 || commandLine.getOptions().length > 3 ){
             CommandLineProcessor.displayHelp();
         }
 
         String mapping = commandLine.getOptionValue("m");
         String csv = commandLine.getOptionValue("c");
 
+
         R2RMLCreator creator = new R2RMLCreator(csv,MappingIO.readMapping(mapping));
         MappingIO.writeMapping(mapping,creator.createR2RML());
-        MorphRunner.runBatch(mapping,csv);
+
+        if(commandLine.hasOption("q")){
+            MorphRunner.runQuery(mapping,csv,commandLine.getOptionValue("q"));
+        }
+        else {
+            MorphRunner.runBatch(mapping, csv);
+        }
 
     }
 }

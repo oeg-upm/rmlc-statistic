@@ -33,4 +33,23 @@ public class MorphRunner {
 
     }
 
+    public static void runQuery(String mapping, String csv, String query){
+        MorphCSVProperties properties = new MorphCSVProperties();
+        properties.setMappingDocumentFilePath(mapping.replace("rmlc.ttl","r2rml.ttl"));
+        Path path = Paths.get(csv);
+        properties.setOutputFilePath(path.getParent().getParent().toAbsolutePath()+"/results/"+path.getFileName().toString().replace(".csv","")+"-results.nt");
+        properties.addCSVFile(csv);
+        properties.setQueryFilePath(query);
+
+        try {
+            MorphCSVRunnerFactory runnerFactory = new MorphCSVRunnerFactory();
+            MorphBaseRunner runner = runnerFactory.createRunner(properties);
+            runner.run();
+            log.info("Evaluation query correctly");
+        } catch(Exception e) {
+            e.printStackTrace();
+            log.info("Error occured: " + e.getMessage());
+        }
+    }
+
 }

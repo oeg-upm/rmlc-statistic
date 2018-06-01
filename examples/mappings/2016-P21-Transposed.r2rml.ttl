@@ -40,7 +40,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/CANADA";
@@ -99,7 +99,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/USA";
@@ -158,7 +158,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/AUSTRIA";
@@ -217,7 +217,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/BELGIUM";
@@ -276,7 +276,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/DENMARK";
@@ -335,7 +335,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/FRANCE";
@@ -394,7 +394,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/NETHERLANDS";
@@ -453,7 +453,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/ITALY";
@@ -512,7 +512,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/NORWAY";
@@ -571,7 +571,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SPAIN";
@@ -630,7 +630,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SWEDEN";
@@ -689,7 +689,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SWITZERLAND";
@@ -748,7 +748,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/UK";
@@ -807,7 +807,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/GERMANY";
@@ -866,7 +866,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/RUSSIA";
@@ -925,7 +925,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/UKRAINE";
@@ -984,7 +984,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/CZECH_REPUBLIC";
@@ -1043,7 +1043,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/POLAND";
@@ -1102,7 +1102,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SOUTH_AFRICA";
@@ -1161,7 +1161,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SAUDI_ARABIA";
@@ -1220,7 +1220,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/UAE";
@@ -1279,7 +1279,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/ISREAL";
@@ -1338,7 +1338,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/KUWAIT";
@@ -1397,7 +1397,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/OMAN";
@@ -1456,7 +1456,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/CHINA";
@@ -1515,7 +1515,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/JAPAN";
@@ -1574,7 +1574,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/MALAYSIA";
@@ -1633,7 +1633,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/PHILIPPINES";
@@ -1692,7 +1692,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/INDONESIA";
@@ -1751,7 +1751,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SINGAPORE";
@@ -1810,7 +1810,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/THAILAND";
@@ -1869,7 +1869,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/SOUTH_KOREA";
@@ -1928,7 +1928,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/INDIA";
@@ -1987,7 +1987,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/MALDIVES";
@@ -2046,7 +2046,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/PAKISTAN";
@@ -2105,7 +2105,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/BANGLADESH";
@@ -2164,7 +2164,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/AUSTRALIA";
@@ -2223,7 +2223,7 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/NEW_ZEALAND";
