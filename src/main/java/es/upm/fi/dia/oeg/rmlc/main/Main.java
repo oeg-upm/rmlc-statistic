@@ -2,6 +2,7 @@ package es.upm.fi.dia.oeg.rmlc.main;
 
 
 import es.upm.fi.dia.oeg.rmlc.processor.MappingIO;
+import es.upm.fi.dia.oeg.rmlc.processor.MorphRunner;
 import es.upm.fi.dia.oeg.rmlc.processor.R2RMLCreator;
 import org.apache.commons.cli.CommandLine;
 import org.apache.log4j.BasicConfigurator;
@@ -27,6 +28,7 @@ public class Main
 
         R2RMLCreator creator = new R2RMLCreator(csv,MappingIO.readMapping(mapping));
         MappingIO.writeMapping(mapping,creator.createR2RML());
+        MorphRunner.runBatch(mapping,csv);
 
     }
 }

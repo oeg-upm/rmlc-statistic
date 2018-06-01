@@ -13,21 +13,23 @@
 @prefix interval: <http://reference.data.gov.uk/def/intervals/> . 
 @prefix sltsv: <http://w3id.org/sri-lanka/tourism/cube-vocab/> .
 @prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
-@prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
+@prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> .
+prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
-<TriplesMapCanada>
+<TriplesMap{$column}>
   # a rr:TriplesMap;
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
 	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "COUNTRYOFRESIDENCE" != 'TOTAL'
+		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
 	  """
+	  rmlc:columnsRange ["Canada","New Zealand"];
   ];
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{COUNTRYOFRESIDENCE}-From-Canada";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-{$column}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -40,10 +42,10 @@
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:countryOfResidence;
+    rr:predicate sltsv:MONTH;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Canada";
+      rr:template "http://dbpedia.org/resource/{$column}";
     ];
   ];
   
@@ -60,7 +62,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{COUNTRYOFRESIDENCE}";
+		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
@@ -68,7 +70,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "CANADA";
+		rr:column "{$column}";
 		rr:datatype xsd:integer;
     ];
   ];
