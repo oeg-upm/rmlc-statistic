@@ -19,8 +19,7 @@ public class MorphRunner {
         MorphCSVProperties properties = new MorphCSVProperties();
         properties.setMappingDocumentFilePath(mapping.replace("rmlc.ttl","r2rml.ttl"));
         Path path = Paths.get(csv);
-        System.out.println(path.getParent().toAbsolutePath()+"/results/"+path.getFileName()+"-results.nt");
-        properties.setOutputFilePath(path.getParent().toAbsolutePath()+"/results/"+path.getFileName().toString().replace(".csv","")+"-results.nt");
+        properties.setOutputFilePath(path.getParent().getParent().toAbsolutePath()+"/results/"+path.getFileName().toString().replace(".csv","")+"-results.nt");
         properties.addCSVFile(csv);
         try {
             MorphCSVRunnerFactory runnerFactory = new MorphCSVRunnerFactory();
