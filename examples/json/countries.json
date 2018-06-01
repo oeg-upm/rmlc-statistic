@@ -1,11 +1,5 @@
-{    
-
+{
     "USA":"United_States",
     "UK":"United_Kingdom",
-    "Czech Republic":"Czech_Republic",
-    "South Africa":"South_Africa",
-    "Saudi Arabia":"Saudi_Arabia",
-    "UAE":"United_Arab_Emirates",
-    "South Korea":"South_Korea",
-    "New Zealand":"New_Zealand"
+    "UAE":"United_Arab_Emirates"
 }

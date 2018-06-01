@@ -15,7 +15,7 @@
 @prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> .
 
-<TriplesMapCANADA>
+<TriplesMapCanada>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -27,7 +27,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-CANADA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Canada";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -74,7 +74,7 @@
   ];
 .
 
-<TriplesMapUSA>
+<TriplesMapUnited_States>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -86,7 +86,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-USA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-United_States";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -133,7 +133,7 @@
   ];
 .
 
-<TriplesMapAUSTRIA>
+<TriplesMapAustria>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -145,7 +145,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-AUSTRIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Austria";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -192,7 +192,7 @@
   ];
 .
 
-<TriplesMapBELGIUM>
+<TriplesMapBelgium>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -204,7 +204,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-BELGIUM";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Belgium";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -251,7 +251,7 @@
   ];
 .
 
-<TriplesMapDENMARK>
+<TriplesMapDenmark>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -263,7 +263,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-DENMARK";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Denmark";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -310,7 +310,7 @@
   ];
 .
 
-<TriplesMapFRANCE>
+<TriplesMapFrance>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -322,7 +322,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-FRANCE";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-France";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -369,7 +369,7 @@
   ];
 .
 
-<TriplesMapNETHERLANDS>
+<TriplesMapNetherlands>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -381,7 +381,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-NETHERLANDS";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Netherlands";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -428,7 +428,7 @@
   ];
 .
 
-<TriplesMapITALY>
+<TriplesMapItaly>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -440,7 +440,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-ITALY";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Italy";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -487,7 +487,7 @@
   ];
 .
 
-<TriplesMapNORWAY>
+<TriplesMapNorway>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -499,7 +499,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-NORWAY";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Norway";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -546,7 +546,7 @@
   ];
 .
 
-<TriplesMapSPAIN>
+<TriplesMapSpain>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -558,7 +558,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SPAIN";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Spain";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -605,7 +605,7 @@
   ];
 .
 
-<TriplesMapSWEDEN>
+<TriplesMapSweden>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -617,7 +617,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SWEDEN";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Sweden";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -664,7 +664,7 @@
   ];
 .
 
-<TriplesMapSWITZERLAND>
+<TriplesMapSwitzerland>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -676,7 +676,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SWITZERLAND";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Switzerland";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -723,7 +723,7 @@
   ];
 .
 
-<TriplesMapUK>
+<TriplesMapUnited_Kingdom>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -735,7 +735,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-UK";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-United_Kingdom";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -782,7 +782,7 @@
   ];
 .
 
-<TriplesMapGERMANY>
+<TriplesMapGermany>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -794,7 +794,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-GERMANY";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Germany";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -841,7 +841,7 @@
   ];
 .
 
-<TriplesMapRUSSIA>
+<TriplesMapRussia>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -853,7 +853,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-RUSSIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Russia";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -900,7 +900,7 @@
   ];
 .
 
-<TriplesMapUKRAINE>
+<TriplesMapUkraine>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -912,7 +912,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-UKRAINE";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Ukraine";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -959,7 +959,7 @@
   ];
 .
 
-<TriplesMapCZECH_REPUBLIC>
+<TriplesMapCzech_Republic>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -971,7 +971,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-CZECH_REPUBLIC";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Czech_Republic";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1018,7 +1018,7 @@
   ];
 .
 
-<TriplesMapPOLAND>
+<TriplesMapPoland>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1030,7 +1030,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-POLAND";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Poland";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1077,7 +1077,7 @@
   ];
 .
 
-<TriplesMapSOUTH_AFRICA>
+<TriplesMapSouth_Africa>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1089,7 +1089,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SOUTH_AFRICA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-South_Africa";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1136,7 +1136,7 @@
   ];
 .
 
-<TriplesMapSAUDI_ARABIA>
+<TriplesMapSaudi_Arabia>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1148,7 +1148,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SAUDI_ARABIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Saudi_Arabia";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1195,7 +1195,7 @@
   ];
 .
 
-<TriplesMapUAE>
+<TriplesMapUnited_Arab_Emirates>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1207,7 +1207,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-UAE";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-United_Arab_Emirates";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1254,7 +1254,7 @@
   ];
 .
 
-<TriplesMapISREAL>
+<TriplesMapIsreal>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1266,7 +1266,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-ISREAL";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Isreal";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1313,7 +1313,7 @@
   ];
 .
 
-<TriplesMapKUWAIT>
+<TriplesMapKuwait>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1325,7 +1325,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-KUWAIT";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Kuwait";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1372,7 +1372,7 @@
   ];
 .
 
-<TriplesMapOMAN>
+<TriplesMapOman>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1384,7 +1384,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-OMAN";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Oman";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1431,7 +1431,7 @@
   ];
 .
 
-<TriplesMapCHINA>
+<TriplesMapChina>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1443,7 +1443,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-CHINA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-China";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1490,7 +1490,7 @@
   ];
 .
 
-<TriplesMapJAPAN>
+<TriplesMapJapan>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1502,7 +1502,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-JAPAN";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Japan";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1549,7 +1549,7 @@
   ];
 .
 
-<TriplesMapMALAYSIA>
+<TriplesMapMalaysia>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1561,7 +1561,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-MALAYSIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Malaysia";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1608,7 +1608,7 @@
   ];
 .
 
-<TriplesMapPHILIPPINES>
+<TriplesMapPhilippines>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1620,7 +1620,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-PHILIPPINES";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Philippines";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1667,7 +1667,7 @@
   ];
 .
 
-<TriplesMapINDONESIA>
+<TriplesMapIndonesia>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1679,7 +1679,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-INDONESIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Indonesia";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1726,7 +1726,7 @@
   ];
 .
 
-<TriplesMapSINGAPORE>
+<TriplesMapSingapore>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1738,7 +1738,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SINGAPORE";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Singapore";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1785,7 +1785,7 @@
   ];
 .
 
-<TriplesMapTHAILAND>
+<TriplesMapThailand>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1797,7 +1797,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-THAILAND";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Thailand";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1844,7 +1844,7 @@
   ];
 .
 
-<TriplesMapSOUTH_KOREA>
+<TriplesMapSouth_Korea>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1856,7 +1856,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SOUTH_KOREA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-South_Korea";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1903,7 +1903,7 @@
   ];
 .
 
-<TriplesMapINDIA>
+<TriplesMapIndia>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1915,7 +1915,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-INDIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-India";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1962,7 +1962,7 @@
   ];
 .
 
-<TriplesMapMALDIVES>
+<TriplesMapMaldives>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1974,7 +1974,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-MALDIVES";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Maldives";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -2021,7 +2021,7 @@
   ];
 .
 
-<TriplesMapPAKISTAN>
+<TriplesMapPakistan>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -2033,7 +2033,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-PAKISTAN";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Pakistan";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -2080,7 +2080,7 @@
   ];
 .
 
-<TriplesMapBANGLADESH>
+<TriplesMapBangladesh>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -2092,7 +2092,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-BANGLADESH";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Bangladesh";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -2139,7 +2139,7 @@
   ];
 .
 
-<TriplesMapAUSTRALIA>
+<TriplesMapAustralia>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -2151,7 +2151,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-AUSTRALIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-Australia";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -2198,7 +2198,7 @@
   ];
 .
 
-<TriplesMapNEW_ZEALAND>
+<TriplesMapNew_Zealand>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -2210,7 +2210,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-NEW_ZEALAND";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-New_Zealand";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];

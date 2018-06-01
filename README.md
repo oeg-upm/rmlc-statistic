@@ -31,8 +31,8 @@ java -jar target/rmlc-statistic-1.0.jar -m path -c path [-q path]
 Where the arguments are:
 + -m: Absolute path to the mapping with iterators. **Mandatory**
 + -c: Absolute path to the CSV file. **Mandatory**
-+ -q: Absolute path to the SPARQL query.
++ -r: Run the materialization process.
++ -q: Virtualize the data providing an absolute path to a SPARQL query.
 
-If you don't provide an SPARQL query, a materialization will be performed. 
 
 After the execution, you will find the results in the [examples/results](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/results) folder.

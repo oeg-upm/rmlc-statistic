@@ -16,7 +16,7 @@
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> .
 prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
-<TriplesMap{$column}>
+<TriplesMap{$alias}>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -30,7 +30,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-{$column}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-{$alias}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];

@@ -33,9 +33,10 @@ public class Main
         if(commandLine.hasOption("q")){
             MorphRunner.runQuery(mapping,csv,commandLine.getOptionValue("q"));
         }
-        else {
+        else if(commandLine.hasOption("r")) {
             MorphRunner.runBatch(mapping, csv);
         }
+
 
     }
 }
