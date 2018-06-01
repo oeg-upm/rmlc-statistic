@@ -43,7 +43,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/CANADA";
+      rr:constant "http://dbpedia.org/resource/CANADA";
     ];
   ];
   
@@ -102,7 +102,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/USA";
+      rr:constant "http://dbpedia.org/resource/USA";
     ];
   ];
   
@@ -161,7 +161,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/AUSTRIA";
+      rr:constant "http://dbpedia.org/resource/AUSTRIA";
     ];
   ];
   
@@ -220,7 +220,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/BELGIUM";
+      rr:constant "http://dbpedia.org/resource/BELGIUM";
     ];
   ];
   
@@ -279,7 +279,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/DENMARK";
+      rr:constant "http://dbpedia.org/resource/DENMARK";
     ];
   ];
   
@@ -338,7 +338,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/FRANCE";
+      rr:constant "http://dbpedia.org/resource/FRANCE";
     ];
   ];
   
@@ -397,7 +397,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/NETHERLANDS";
+      rr:constant "http://dbpedia.org/resource/NETHERLANDS";
     ];
   ];
   
@@ -456,7 +456,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/ITALY";
+      rr:constant "http://dbpedia.org/resource/ITALY";
     ];
   ];
   
@@ -515,7 +515,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/NORWAY";
+      rr:constant "http://dbpedia.org/resource/NORWAY";
     ];
   ];
   
@@ -574,7 +574,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SPAIN";
+      rr:constant "http://dbpedia.org/resource/SPAIN";
     ];
   ];
   
@@ -633,7 +633,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SWEDEN";
+      rr:constant "http://dbpedia.org/resource/SWEDEN";
     ];
   ];
   
@@ -692,7 +692,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SWITZERLAND";
+      rr:constant "http://dbpedia.org/resource/SWITZERLAND";
     ];
   ];
   
@@ -751,7 +751,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/UK";
+      rr:constant "http://dbpedia.org/resource/UK";
     ];
   ];
   
@@ -810,7 +810,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/GERMANY";
+      rr:constant "http://dbpedia.org/resource/GERMANY";
     ];
   ];
   
@@ -869,7 +869,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/RUSSIA";
+      rr:constant "http://dbpedia.org/resource/RUSSIA";
     ];
   ];
   
@@ -928,7 +928,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/UKRAINE";
+      rr:constant "http://dbpedia.org/resource/UKRAINE";
     ];
   ];
   
@@ -987,7 +987,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/CZECH_REPUBLIC";
+      rr:constant "http://dbpedia.org/resource/CZECH_REPUBLIC";
     ];
   ];
   
@@ -1046,7 +1046,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/POLAND";
+      rr:constant "http://dbpedia.org/resource/POLAND";
     ];
   ];
   
@@ -1105,7 +1105,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SOUTH_AFRICA";
+      rr:constant "http://dbpedia.org/resource/SOUTH_AFRICA";
     ];
   ];
   
@@ -1164,7 +1164,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SAUDI_ARABIA";
+      rr:constant "http://dbpedia.org/resource/SAUDI_ARABIA";
     ];
   ];
   
@@ -1223,7 +1223,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/UAE";
+      rr:constant "http://dbpedia.org/resource/UAE";
     ];
   ];
   
@@ -1282,7 +1282,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/ISREAL";
+      rr:constant "http://dbpedia.org/resource/ISREAL";
     ];
   ];
   
@@ -1341,7 +1341,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/KUWAIT";
+      rr:constant "http://dbpedia.org/resource/KUWAIT";
     ];
   ];
   
@@ -1400,7 +1400,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/OMAN";
+      rr:constant "http://dbpedia.org/resource/OMAN";
     ];
   ];
   
@@ -1459,7 +1459,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/CHINA";
+      rr:constant "http://dbpedia.org/resource/CHINA";
     ];
   ];
   
@@ -1518,7 +1518,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/JAPAN";
+      rr:constant "http://dbpedia.org/resource/JAPAN";
     ];
   ];
   
@@ -1577,7 +1577,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/MALAYSIA";
+      rr:constant "http://dbpedia.org/resource/MALAYSIA";
     ];
   ];
   
@@ -1636,7 +1636,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/PHILIPPINES";
+      rr:constant "http://dbpedia.org/resource/PHILIPPINES";
     ];
   ];
   
@@ -1695,7 +1695,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/INDONESIA";
+      rr:constant "http://dbpedia.org/resource/INDONESIA";
     ];
   ];
   
@@ -1754,7 +1754,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SINGAPORE";
+      rr:constant "http://dbpedia.org/resource/SINGAPORE";
     ];
   ];
   
@@ -1813,7 +1813,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/THAILAND";
+      rr:constant "http://dbpedia.org/resource/THAILAND";
     ];
   ];
   
@@ -1872,7 +1872,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SOUTH_KOREA";
+      rr:constant "http://dbpedia.org/resource/SOUTH_KOREA";
     ];
   ];
   
@@ -1931,7 +1931,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/INDIA";
+      rr:constant "http://dbpedia.org/resource/INDIA";
     ];
   ];
   
@@ -1990,7 +1990,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/MALDIVES";
+      rr:constant "http://dbpedia.org/resource/MALDIVES";
     ];
   ];
   
@@ -2049,7 +2049,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/PAKISTAN";
+      rr:constant "http://dbpedia.org/resource/PAKISTAN";
     ];
   ];
   
@@ -2108,7 +2108,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/BANGLADESH";
+      rr:constant "http://dbpedia.org/resource/BANGLADESH";
     ];
   ];
   
@@ -2167,7 +2167,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/AUSTRALIA";
+      rr:constant "http://dbpedia.org/resource/AUSTRALIA";
     ];
   ];
   
@@ -2226,7 +2226,7 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/NEW_ZEALAND";
+      rr:constant "http://dbpedia.org/resource/NEW_ZEALAND";
     ];
   ];
   

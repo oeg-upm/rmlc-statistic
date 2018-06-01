@@ -45,7 +45,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/{$column}";
+      rr:constant "http://dbpedia.org/resource/{$column}";
     ];
   ];
   
