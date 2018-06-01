@@ -26,9 +26,9 @@ mvn clean install
 java -jar target/rmlc-statistic-1.0.jar -m path -c path [-q path]
 ```
 Where the arguments are:
-+ -m: Path to the mapping with iterators. **Mandatory**
-+ -c: Path to the CSV file. **Mandatory**
-+ -q: Path to the SPARQL query.
++ -m: Absolute path to the mapping with iterators. **Mandatory**
++ -c: Absolute path to the CSV file. **Mandatory**
++ -q: Absolute path to the SPARQL query.
 
 If you don't provide an SPARQL query, a materialization will be performed. 
 
