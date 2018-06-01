@@ -42,7 +42,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
   ];
 
   rr:predicateObjectMap[
-    rr:predicate sltsv:MONTH;
+    rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
       rr:template "http://dbpedia.org/resource/{$column}";
