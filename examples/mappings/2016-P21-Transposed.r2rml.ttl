@@ -959,7 +959,7 @@
   ];
 .
 
-<TriplesMapCZECH REPUBLIC>
+<TriplesMapCZECH_REPUBLIC>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -971,7 +971,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-CZECH REPUBLIC";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-CZECH_REPUBLIC";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -987,7 +987,7 @@
     rr:predicate sltsv:MONTH;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/CZECH REPUBLIC";
+      rr:template "http://dbpedia.org/resource/CZECH_REPUBLIC";
     ];
   ];
   
@@ -1012,7 +1012,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "CZECH REPUBLIC";
+		rr:column "CZECH_REPUBLIC";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1077,7 +1077,7 @@
   ];
 .
 
-<TriplesMapSOUTH AFRICA>
+<TriplesMapSOUTH_AFRICA>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1089,7 +1089,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SOUTH AFRICA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SOUTH_AFRICA";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1105,7 +1105,7 @@
     rr:predicate sltsv:MONTH;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SOUTH AFRICA";
+      rr:template "http://dbpedia.org/resource/SOUTH_AFRICA";
     ];
   ];
   
@@ -1130,13 +1130,13 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SOUTH AFRICA";
+		rr:column "SOUTH_AFRICA";
 		rr:datatype xsd:integer;
     ];
   ];
 .
 
-<TriplesMapSAUDI ARABIA>
+<TriplesMapSAUDI_ARABIA>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1148,7 +1148,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SAUDI ARABIA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SAUDI_ARABIA";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1164,7 +1164,7 @@
     rr:predicate sltsv:MONTH;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SAUDI ARABIA";
+      rr:template "http://dbpedia.org/resource/SAUDI_ARABIA";
     ];
   ];
   
@@ -1189,7 +1189,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SAUDI ARABIA";
+		rr:column "SAUDI_ARABIA";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1844,7 +1844,7 @@
   ];
 .
 
-<TriplesMapSOUTH KOREA>
+<TriplesMapSOUTH_KOREA>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -1856,7 +1856,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SOUTH KOREA";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-SOUTH_KOREA";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -1872,7 +1872,7 @@
     rr:predicate sltsv:MONTH;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/SOUTH KOREA";
+      rr:template "http://dbpedia.org/resource/SOUTH_KOREA";
     ];
   ];
   
@@ -1897,7 +1897,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SOUTH KOREA";
+		rr:column "SOUTH_KOREA";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -2198,7 +2198,7 @@
   ];
 .
 
-<TriplesMapNEW ZEALAND>
+<TriplesMapNEW_ZEALAND>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -2210,7 +2210,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-NEW ZEALAND";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{MONTH}-From-NEW_ZEALAND";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -2226,7 +2226,7 @@
     rr:predicate sltsv:MONTH;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/NEW ZEALAND";
+      rr:template "http://dbpedia.org/resource/NEW_ZEALAND";
     ];
   ];
   
@@ -2251,7 +2251,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "NEW ZEALAND";
+		rr:column "NEW_ZEALAND";
 		rr:datatype xsd:integer;
     ];
   ];
