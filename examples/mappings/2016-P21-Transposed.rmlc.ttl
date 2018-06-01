@@ -24,7 +24,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 	  rr:sqlQuery """ 
 		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
 	  """
-	  rmlc:columnsRange ["Canada","New Zealand"];
+	  rmlc:columnRange ["Canada","New Zealand"];
   ];
 
   rr:subjectMap [
