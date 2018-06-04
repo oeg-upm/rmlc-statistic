@@ -20,9 +20,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -43,33 +43,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Canada";
+      rr:constant "http://dbpedia.org/resource/Canada";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "CANADA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "CANADA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -79,9 +79,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -102,33 +102,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/United_States";
+      rr:constant "http://dbpedia.org/resource/United_States";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "USA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "USA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -138,9 +138,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -161,33 +161,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Austria";
+      rr:constant "http://dbpedia.org/resource/Austria";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "AUSTRIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "AUSTRIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -197,9 +197,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -220,33 +220,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Belgium";
+      rr:constant "http://dbpedia.org/resource/Belgium";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "BELGIUM";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "BELGIUM";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -256,9 +256,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -279,33 +279,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Denmark";
+      rr:constant "http://dbpedia.org/resource/Denmark";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "DENMARK";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "DENMARK";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -315,9 +315,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -338,33 +338,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/France";
+      rr:constant "http://dbpedia.org/resource/France";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "FRANCE";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "FRANCE";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -374,9 +374,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -397,33 +397,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Netherlands";
+      rr:constant "http://dbpedia.org/resource/Netherlands";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "NETHERLANDS";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "NETHERLANDS";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -433,9 +433,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -456,33 +456,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Italy";
+      rr:constant "http://dbpedia.org/resource/Italy";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "ITALY";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "ITALY";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -492,9 +492,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -515,33 +515,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Norway";
+      rr:constant "http://dbpedia.org/resource/Norway";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "NORWAY";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "NORWAY";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -551,9 +551,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -574,33 +574,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Spain";
+      rr:constant "http://dbpedia.org/resource/Spain";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SPAIN";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SPAIN";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -610,9 +610,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -633,33 +633,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Sweden";
+      rr:constant "http://dbpedia.org/resource/Sweden";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SWEDEN";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SWEDEN";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -669,9 +669,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -692,33 +692,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Switzerland";
+      rr:constant "http://dbpedia.org/resource/Switzerland";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SWITZERLAND";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SWITZERLAND";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -728,9 +728,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -751,33 +751,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/United_Kingdom";
+      rr:constant "http://dbpedia.org/resource/United_Kingdom";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "UK";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "UK";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -787,9 +787,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -810,33 +810,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Germany";
+      rr:constant "http://dbpedia.org/resource/Germany";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "GERMANY";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "GERMANY";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -846,9 +846,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -869,33 +869,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Russia";
+      rr:constant "http://dbpedia.org/resource/Russia";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "RUSSIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "RUSSIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -905,9 +905,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -928,33 +928,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Ukraine";
+      rr:constant "http://dbpedia.org/resource/Ukraine";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "UKRAINE";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "UKRAINE";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -964,9 +964,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -987,33 +987,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Czech_Republic";
+      rr:constant "http://dbpedia.org/resource/Czech_Republic";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "CZECH_REPUBLIC";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "CZECH_REPUBLIC";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1023,9 +1023,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1046,33 +1046,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Poland";
+      rr:constant "http://dbpedia.org/resource/Poland";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "POLAND";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "POLAND";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1082,9 +1082,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1105,33 +1105,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/South_Africa";
+      rr:constant "http://dbpedia.org/resource/South_Africa";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SOUTH_AFRICA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SOUTH_AFRICA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1141,9 +1141,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1164,33 +1164,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Saudi_Arabia";
+      rr:constant "http://dbpedia.org/resource/Saudi_Arabia";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SAUDI_ARABIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SAUDI_ARABIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1200,9 +1200,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1223,33 +1223,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/United_Arab_Emirates";
+      rr:constant "http://dbpedia.org/resource/United_Arab_Emirates";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "UAE";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "UAE";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1259,9 +1259,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1282,33 +1282,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Isreal";
+      rr:constant "http://dbpedia.org/resource/Isreal";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "ISREAL";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "ISREAL";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1318,9 +1318,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1341,33 +1341,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Kuwait";
+      rr:constant "http://dbpedia.org/resource/Kuwait";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "KUWAIT";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "KUWAIT";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1377,9 +1377,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1400,33 +1400,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Oman";
+      rr:constant "http://dbpedia.org/resource/Oman";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "OMAN";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "OMAN";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1436,9 +1436,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1459,33 +1459,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/China";
+      rr:constant "http://dbpedia.org/resource/China";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "CHINA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "CHINA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1495,9 +1495,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1518,33 +1518,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Japan";
+      rr:constant "http://dbpedia.org/resource/Japan";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "JAPAN";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "JAPAN";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1554,9 +1554,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1577,33 +1577,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Malaysia";
+      rr:constant "http://dbpedia.org/resource/Malaysia";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "MALAYSIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "MALAYSIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1613,9 +1613,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1636,33 +1636,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Philippines";
+      rr:constant "http://dbpedia.org/resource/Philippines";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "PHILIPPINES";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "PHILIPPINES";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1672,9 +1672,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1695,33 +1695,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Indonesia";
+      rr:constant "http://dbpedia.org/resource/Indonesia";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "INDONESIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "INDONESIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1731,9 +1731,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1754,33 +1754,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Singapore";
+      rr:constant "http://dbpedia.org/resource/Singapore";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SINGAPORE";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SINGAPORE";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1790,9 +1790,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1813,33 +1813,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Thailand";
+      rr:constant "http://dbpedia.org/resource/Thailand";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "THAILAND";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "THAILAND";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1849,9 +1849,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1872,33 +1872,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/South_Korea";
+      rr:constant "http://dbpedia.org/resource/South_Korea";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "SOUTH_KOREA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "SOUTH_KOREA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1908,9 +1908,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1931,33 +1931,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/India";
+      rr:constant "http://dbpedia.org/resource/India";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "INDIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "INDIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -1967,9 +1967,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -1990,33 +1990,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Maldives";
+      rr:constant "http://dbpedia.org/resource/Maldives";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "MALDIVES";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "MALDIVES";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -2026,9 +2026,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -2049,33 +2049,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Pakistan";
+      rr:constant "http://dbpedia.org/resource/Pakistan";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "PAKISTAN";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "PAKISTAN";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -2085,9 +2085,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -2108,33 +2108,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Bangladesh";
+      rr:constant "http://dbpedia.org/resource/Bangladesh";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "BANGLADESH";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "BANGLADESH";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -2144,9 +2144,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -2167,33 +2167,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/Australia";
+      rr:constant "http://dbpedia.org/resource/Australia";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "AUSTRALIA";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "AUSTRALIA";
+    rr:datatype xsd:integer;
     ];
   ];
 .
@@ -2203,9 +2203,9 @@
 
   rr:logicalTable [
       #rr:tableName "\"2016-P21-TRANSPOSED\""
-	  rr:sqlQuery """ 
-		SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
-	  """
+    rr:sqlQuery """ 
+    SELECT * FROM "2016-P21-TRANSPOSED" WHERE "MONTH" != 'TOTAL'
+    """
   ];
 
   rr:subjectMap [
@@ -2226,33 +2226,33 @@
     rr:predicate sltsv:countryOfResidence;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:template "http://dbpedia.org/resource/New_Zealand";
+      rr:constant "http://dbpedia.org/resource/New_Zealand";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:year;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:constant "2016";
-		rr:datatype xsd:gYear;
+  rr:predicate sltsv:year;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:constant "2016";
+    rr:datatype xsd:gYear;
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:month;
-	rr:objectMap [
-		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/{MONTH}";
+  rr:predicate sltsv:month;
+  rr:objectMap [
+    rr:termType rr:IRI;
+    rr:template "http://reference.data.gov.uk/def/intervals/{MONTH}";
     ];
   ];
   
   rr:predicateObjectMap[
-	rr:predicate sltsv:numberOfArrivals;
-	rr:objectMap [
-		rr:termType rr:Literal;
-		rr:column "NEW_ZEALAND";
-		rr:datatype xsd:integer;
+  rr:predicate sltsv:numberOfArrivals;
+  rr:objectMap [
+    rr:termType rr:Literal;
+    rr:column "NEW_ZEALAND";
+    rr:datatype xsd:integer;
     ];
   ];
 .
