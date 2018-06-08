@@ -22,7 +22,7 @@
   rr:logicalTable [
     rr:tableName "\"2016-P21\"";
     rmlc:columnRange ["Jan","Dec"];
-    rmlc:dictionary "/Users/dchaves/Documents/repos/rmlc-statistic/examples/json/dictionary.json";
+    rmlc:dictionary "examples/json/dictionary.json";
   ];
 
   rr:subjectMap [
