@@ -23,6 +23,7 @@ the dictionary to replace the values.
 git clone https://github.com/oeg-upm/morph-rdb.git --branch v3.9.11
 cd morph-rdb
 mvn clean install
+cd ..
 git clone https://github.com/oeg-upm/rmlc-statistic.git
 cd rmlc-statistic
 mvn clean install
