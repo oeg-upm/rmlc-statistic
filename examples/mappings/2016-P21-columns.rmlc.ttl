@@ -21,8 +21,7 @@
 
   rr:logicalTable [
     rr:tableName "\"2016-P21\"";
-    rmlc:columns ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    rmlc:dictionary {"Jan":"January","Feb":"February","Mar":"March","Apr":"April","May":"May","Jun":"June","Jul":"July","Aug":"August","Sep":"September","Oct":"October","Nov":"November","Dec":"December"};
+    rmlc:columns ["January","February","March","April","May","June","July","August","September","October","November","December"];
   ];
 
   rr:subjectMap [
