@@ -153,7 +153,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "Czech Republic";
+		rr:column "CZECH REPUBLIC";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1353,7 +1353,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "United Kingdom";
+		rr:column "UNITED KINGDOM";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1593,7 +1593,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "Former Yugoslav Republic of Macedonia";
+		rr:column "FORMER YUGOSLAV REPUBLIC OF MACEDONIA";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1689,7 +1689,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "Bosnia and Herzegovina";
+		rr:column "BOSNIA AND HERZEGOVINA";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1833,7 +1833,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "San Marino";
+		rr:column "SAN MARINO";
 		rr:datatype xsd:integer;
     ];
   ];
