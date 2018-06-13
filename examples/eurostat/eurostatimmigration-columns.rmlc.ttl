@@ -60,7 +60,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "{$column}";
+		rr:column "{$alias}";
 		rr:datatype xsd:integer;
     ];
   ];
