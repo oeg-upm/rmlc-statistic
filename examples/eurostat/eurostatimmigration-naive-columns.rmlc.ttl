@@ -16,7 +16,7 @@
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
 prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
-<TriplesMap{$column}>
+<TriplesMap{$alias}>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -26,7 +26,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://ex.com/values/immigrants-to-{$column}-in-{YEAR}";
+    rr:template "http://ex.com/values/immigrants-to-{$alias}-in-{YEAR}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -42,7 +42,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/{$column}";
+      rr:constant "http://dbpedia.org/resource/{$alias}";
     ];
   ];
   
@@ -59,7 +59,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "{$column}";
+		rr:column "{$alias}";
 		rr:datatype xsd:integer;
     ];
   ];
