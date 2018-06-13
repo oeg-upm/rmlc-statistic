@@ -153,7 +153,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "Czech Republic";
+		rr:column "CZECH REPUBLIC";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1353,7 +1353,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "United Kingdom";
+		rr:column "UNITED KINGDOM";
 		rr:datatype xsd:integer;
     ];
   ];
