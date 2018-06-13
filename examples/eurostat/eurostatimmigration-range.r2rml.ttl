@@ -40,7 +40,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/BELGIUM";
+      rr:constant "http://dbpedia.org/resource/Belgium";
     ];
   ];
   
@@ -57,7 +57,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "BELGIUM";
+		rr:column "Belgium";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -88,7 +88,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/BULGARIA";
+      rr:constant "http://dbpedia.org/resource/Bulgaria";
     ];
   ];
   
@@ -105,7 +105,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "BULGARIA";
+		rr:column "Bulgaria";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -136,7 +136,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Czech_Republic";
+      rr:constant "http://dbpedia.org/resource/Czech Republic";
     ];
   ];
   
@@ -153,7 +153,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "CZECH REPUBLIC";
+		rr:column "Czech Republic";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -184,7 +184,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/DENMARK";
+      rr:constant "http://dbpedia.org/resource/Denmark";
     ];
   ];
   
@@ -201,7 +201,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "DENMARK";
+		rr:column "Denmark";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -232,7 +232,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/GERMANY";
+      rr:constant "http://dbpedia.org/resource/Germany";
     ];
   ];
   
@@ -249,7 +249,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "GERMANY";
+		rr:column "Germany";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -280,7 +280,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/ESTONIA";
+      rr:constant "http://dbpedia.org/resource/Estonia";
     ];
   ];
   
@@ -297,7 +297,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "ESTONIA";
+		rr:column "Estonia";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -328,7 +328,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/IRELAND";
+      rr:constant "http://dbpedia.org/resource/Ireland";
     ];
   ];
   
@@ -345,7 +345,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "IRELAND";
+		rr:column "Ireland";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -376,7 +376,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/GREECE";
+      rr:constant "http://dbpedia.org/resource/Greece";
     ];
   ];
   
@@ -393,7 +393,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "GREECE";
+		rr:column "Greece";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -424,7 +424,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/SPAIN";
+      rr:constant "http://dbpedia.org/resource/Spain";
     ];
   ];
   
@@ -441,7 +441,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SPAIN";
+		rr:column "Spain";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -472,7 +472,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/FRANCE";
+      rr:constant "http://dbpedia.org/resource/France";
     ];
   ];
   
@@ -489,7 +489,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "FRANCE";
+		rr:column "France";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -520,7 +520,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/CROATIA";
+      rr:constant "http://dbpedia.org/resource/Croatia";
     ];
   ];
   
@@ -537,7 +537,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "CROATIA";
+		rr:column "Croatia";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -568,7 +568,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/ITALY";
+      rr:constant "http://dbpedia.org/resource/Italy";
     ];
   ];
   
@@ -585,7 +585,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "ITALY";
+		rr:column "Italy";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -616,7 +616,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/CYPRUS";
+      rr:constant "http://dbpedia.org/resource/Cyprus";
     ];
   ];
   
@@ -633,7 +633,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "CYPRUS";
+		rr:column "Cyprus";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -664,7 +664,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/LATVIA";
+      rr:constant "http://dbpedia.org/resource/Latvia";
     ];
   ];
   
@@ -681,7 +681,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "LATVIA";
+		rr:column "Latvia";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -712,7 +712,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/LITHUANIA";
+      rr:constant "http://dbpedia.org/resource/Lithuania";
     ];
   ];
   
@@ -729,7 +729,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "LITHUANIA";
+		rr:column "Lithuania";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -760,7 +760,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/LUXEMBOURG";
+      rr:constant "http://dbpedia.org/resource/Luxembourg";
     ];
   ];
   
@@ -777,7 +777,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "LUXEMBOURG";
+		rr:column "Luxembourg";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -808,7 +808,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/HUNGARY";
+      rr:constant "http://dbpedia.org/resource/Hungary";
     ];
   ];
   
@@ -825,7 +825,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "HUNGARY";
+		rr:column "Hungary";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -856,7 +856,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/MALTA";
+      rr:constant "http://dbpedia.org/resource/Malta";
     ];
   ];
   
@@ -873,7 +873,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "MALTA";
+		rr:column "Malta";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -904,7 +904,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/NETHERLANDS";
+      rr:constant "http://dbpedia.org/resource/Netherlands";
     ];
   ];
   
@@ -921,7 +921,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "NETHERLANDS";
+		rr:column "Netherlands";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -952,7 +952,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/AUSTRIA";
+      rr:constant "http://dbpedia.org/resource/Austria";
     ];
   ];
   
@@ -969,7 +969,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "AUSTRIA";
+		rr:column "Austria";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1000,7 +1000,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/POLAND";
+      rr:constant "http://dbpedia.org/resource/Poland";
     ];
   ];
   
@@ -1017,7 +1017,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "POLAND";
+		rr:column "Poland";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1048,7 +1048,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/PORTUGAL";
+      rr:constant "http://dbpedia.org/resource/Portugal";
     ];
   ];
   
@@ -1065,7 +1065,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "PORTUGAL";
+		rr:column "Portugal";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1096,7 +1096,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/ROMANIA";
+      rr:constant "http://dbpedia.org/resource/Romania";
     ];
   ];
   
@@ -1113,7 +1113,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "ROMANIA";
+		rr:column "Romania";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1144,7 +1144,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/SLOVENIA";
+      rr:constant "http://dbpedia.org/resource/Slovenia";
     ];
   ];
   
@@ -1161,7 +1161,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SLOVENIA";
+		rr:column "Slovenia";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1192,7 +1192,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/SLOVAKIA";
+      rr:constant "http://dbpedia.org/resource/Slovakia";
     ];
   ];
   
@@ -1209,7 +1209,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SLOVAKIA";
+		rr:column "Slovakia";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1240,7 +1240,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/FINLAND";
+      rr:constant "http://dbpedia.org/resource/Finland";
     ];
   ];
   
@@ -1257,7 +1257,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "FINLAND";
+		rr:column "Finland";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1288,7 +1288,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/SWEDEN";
+      rr:constant "http://dbpedia.org/resource/Sweden";
     ];
   ];
   
@@ -1305,7 +1305,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SWEDEN";
+		rr:column "Sweden";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1336,7 +1336,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/United_Kingdom";
+      rr:constant "http://dbpedia.org/resource/United Kingdom";
     ];
   ];
   
@@ -1353,7 +1353,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "UNITED KINGDOM";
+		rr:column "United Kingdom";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1384,7 +1384,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/ICELAND";
+      rr:constant "http://dbpedia.org/resource/Iceland";
     ];
   ];
   
@@ -1401,7 +1401,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "ICELAND";
+		rr:column "Iceland";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1432,7 +1432,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/LIECHTENSTEIN";
+      rr:constant "http://dbpedia.org/resource/Liechtenstein";
     ];
   ];
   
@@ -1449,7 +1449,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "LIECHTENSTEIN";
+		rr:column "Liechtenstein";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1480,7 +1480,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/NORWAY";
+      rr:constant "http://dbpedia.org/resource/Norway";
     ];
   ];
   
@@ -1497,7 +1497,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "NORWAY";
+		rr:column "Norway";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -1528,7 +1528,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/SWITZERLAND";
+      rr:constant "http://dbpedia.org/resource/Switzerland";
     ];
   ];
   
@@ -1545,7 +1545,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SWITZERLAND";
+		rr:column "Switzerland";
 		rr:datatype xsd:integer;
     ];
   ];

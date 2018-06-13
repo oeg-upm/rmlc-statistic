@@ -43,7 +43,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/{$alias}";
+      rr:constant "http://dbpedia.org/resource/{$column}";
     ];
   ];
   
