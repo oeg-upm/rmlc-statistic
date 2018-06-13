@@ -15,7 +15,7 @@
 @prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
 
-<TriplesMapBelgium>
+<TriplesMapCzech_Republic>
   # a rr:TriplesMap;
 
   rr:logicalTable [
@@ -24,7 +24,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://ex.com/values/immigrants-to-Belgium-in-{YEAR}";
+    rr:template "http://ex.com/values/immigrants-to-Czech_Republic-in-{YEAR}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -40,7 +40,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Belgium";
+      rr:constant "http://dbpedia.org/resource/Czech_Republic";
     ];
   ];
   
@@ -57,7 +57,7 @@
 	rr:predicate ex:numberOfImmigrants;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "BELGIUM";
+		rr:column "Czech Republic";
 		rr:datatype xsd:integer;
     ];
   ];
