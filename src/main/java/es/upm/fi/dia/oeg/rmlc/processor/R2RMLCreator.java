@@ -68,7 +68,7 @@ public class R2RMLCreator {
             ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
             for (String line : auxMappingLines) {
                 if (line.matches(".*\\{\\$column}.*")) {
-                    line = line.replace("{$column}", headers[start].toUpperCase());
+                    line = line.replace("{$column}", headers[start]);
                 }
                 if (line.matches(".*\\{\\$alias}.*")) {
                     if(dictionary.has(headers[start]))
@@ -92,7 +92,7 @@ public class R2RMLCreator {
             ArrayList<String> auxMappingLines = (ArrayList<String>) mappingLines.clone();
             for (String line : auxMappingLines) {
                 if (line.matches(".*\\{\\$column}.*")) {
-                    line = line.replace("{$column}", mappingColumns.get(i).toUpperCase());
+                    line = line.replace("{$column}", mappingColumns.get(i));
                 }
                 if (line.matches(".*\\{\\$alias}.*")) {
                     if(dictionary.has(mappingColumns.get(i)))
