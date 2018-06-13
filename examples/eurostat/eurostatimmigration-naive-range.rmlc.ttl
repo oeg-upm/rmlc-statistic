@@ -21,7 +21,8 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
   rr:logicalTable [
       rr:tableName "\"EUROSTATIMMIGRATION\"";
-      rmlc:columnRange ["Belgium","Azerbaijan"]
+      rmlc:columnRange ["Belgium","Switzerland"];
+      rmlc:dictionary "examples/eurostat/eurostatimmigration-naive-dictionary.json";
   ];
 
   rr:subjectMap [
