@@ -1,0 +1,65 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rev: <http://purl.org/stuff/rev#> .
+@prefix gtfs: <http://vocab.gtfs.org/terms#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix schema: <http://schema.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> . 
+@prefix sltsv: <http://w3id.org/sri-lanka/tourism/cube-vocab/> .
+@prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
+@prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
+@prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
+
+<TriplesMap{$column}>
+    # a rr:TriplesMap;
+
+    rr:logicalTable [
+        rr:tableName "\"EUROSTATPOPULATION\""
+        rmlc:columns ["2006","2007","2008","2009","2010","2011","2012","2013"];
+    ];
+
+    rr:subjectMap [
+        a rr:Subject;
+        rr:template "http://ex.com/values/population-of-{COUNTRY}-in-{$column}";
+        rr:termType rr:IRI;
+        rr:class qb:Observation;
+    ];
+
+    rr:predicateObjectMap[
+        rr:predicate qb:dataSet;
+        rr:objectMap [ rr:constant "ex:population"; ];
+    ];
+
+    rr:predicateObjectMap[
+        rr:predicate ex:country;
+        rr:objectMap [
+            rr:termType rr:IRI;
+            rr:template "http://dbpedia.org/resource/{COUNTRY}";
+        ];
+    ];
+  
+    rr:predicateObjectMap[
+        rr:predicate sltsv:year;
+        rr:objectMap [
+            rr:termType rr:Literal;
+            rr:constant "{$column}";
+            rr:datatype xsd:gYear;
+        ];
+    ];
+  
+    rr:predicateObjectMap[
+        rr:predicate sltsv:numberOfPopulation;
+        rr:objectMap [
+            rr:termType rr:Literal;
+            rr:column "{$column}";
+            rr:datatype xsd:integer;
+        ];
+    ];
+.
+
