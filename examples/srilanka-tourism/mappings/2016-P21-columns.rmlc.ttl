@@ -21,12 +21,13 @@
 
   rr:logicalTable [
     rr:tableName "\"2016-P21\"";
-    rmlc:columns ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    rmlc:columns ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    rmlc:dictionary {"Jan":"January","Feb":"February","Mar":"March","Apr":"April", "Jun":"June", "Jul":"July", "Aug":"August", "Sep":"September", "Oct":"October", "Nov":"November","Dec":"December"};
   ];
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{$column}-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016{$alias}-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
