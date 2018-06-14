@@ -2,15 +2,15 @@
 <sparql>
     <head>
         <variable name="obs"/>
-        <variable name="noOfArrivals"/>
+        <variable name="noOfImmigrants"/>
     </head>
     <results>
         <result>
             <binding name="obs">
-                <uri>http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016May-From-Spain</uri>
+                <uri>http://ex.com/values/immigrants-to-SPAIN-in-2015</uri>
             </binding>
-            <binding name="noOfArrivals">
-                <literal>719</literal>
+            <binding name="noOfImmigrants">
+                <literal>342114</literal>
             </binding>
         </result>
     </results>
