@@ -22,9 +22,9 @@
             <div id="authors">
                 <dl id="author-name">
                     <dt>Authors</dt>
-                    <dd id="author-1"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#Idafen-Santana" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Idafen Santana-Perez</a></span><sup><a href="#author-org-1">1</a></sup></dd>
-                    <dd id="author-2"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#David-Chaves" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">David Chaves-Fraga</a></span><sup><a href="#author-org-1">1</a></sup></dd>
-                    <dd id="author-3"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#Freddy-Priyatna" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Freddy Priyatna</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                    <dd id="author-1"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#David-Chaves" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">David Chaves-Fraga</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                    <dd id="author-2"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#Freddy-Priyatna" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Freddy Priyatna</a></span><sup><a href="#author-org-1">1</a></sup></dd>
+                    <dd id="author-3"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#Idafen-Santana" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Idafen Santana-Perez</a></span><sup><a href="#author-org-1">1</a></sup></dd>
                     <dd id="author-4"><span about="" rel="schema:creator schema:publisher schema:contributor schema:author"><a about="#Oscar-Corcho" typeof="schema:Person" rel="schema:url" property="schema:name" href="#">Oscar Corcho</a></span><sup><a href="#author-org-1">1</a></sup></dd>
                 </dl>
 
@@ -48,6 +48,7 @@
                     <h2>Abstract</h2>
                     <div datatype="rdf:HTML" property="schema:abstract">
                         <p>
+                            Statistical data is often published as tabular data by statistical offices and governmental agencies. In last years, many of these institutions have addressed an interoperable way of releasing their data, by means of semantic technologies. Existing approaches normally employ ad-hoc techniques to transform this tabular data to Statistics Knowledge Graph (SKG) and materialize it. This approach imposes the need of periodical maintenance to ensure the synchronization between the dataset and the transformation result. Using R2RML, the W3C mapping language recommendation, the generation of virtual SKG is possible thanks to the capability of its processors. However, as the size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated, it may be prohibitively large, hindering its maintenance. In this paper we propose an approach to reduce the size of the mapping document by extending RMLC, a mapping language for tabular data. We provide a mapping translator from RMLC to R2RML and a comparative analysis over two different real statistics datasets.
                         </p>
                     </div>
                 </section>
@@ -56,7 +57,10 @@
                     <h2>Keywords</h2>
                     <div>
                         <ul>
-                            <li></li>
+                            <li>Statistical Data</li>
+                            <li>R2RML</li>
+                            <li>RDF Cube</li>
+                            <li>RMLC</li>
                         </ul>
                     </div>
                 </section>
@@ -64,7 +68,10 @@
                 <section id="introduction" rel="schema:hasPart" resource="#introduction">
                     <h2 property="schema:name">Introduction</h2>
                     <div datatype="rdf:HTML" property="schema:description">
-                       
+                       <p>Statistical data is one of the most common ways of sharing public information nowadays. PDF, HTML and, especially, CSV format, are some of the most used formats of tabular data being published on the web by statistical agencies. Whereas this is still the main trend, many agencies worldwide are embracing semantic technologies for publishing their resources as Statistics Knowledge Graph (SKG). In many cases both formats co-exist, allowing to access the information in different ways.</p>
+                       <p>Due to high volume and variability of data, the transformation from tabular to SKG-oriented formats requires from a process that is standard and maintainable. We identify two main approaches for transforming tabular data to Statistics Knowledge Graph (SKG). The first approach is an ad-hoc approach, such as one that has been reported in [ARAGONPAPER], in which CSV data is converted into RDF Data Cube[data cubes] using a set of custom rules. The second approach is defined on the basis of mapping languages, such as the W3C Recommendation R2RML, in which transformations are codified in an standard language, with several tools available for applying them.</p>
+                       <p>In an ad-hoc approach such as reported in [ARAGONPAPER], a processor which is the main component responsible for the transformation process, is developed for a specific purpose, not being common to reuse it for other solutions. The SKG resulting from the transformation process is stored in a triple store and there is a need for repeating the transformation process whenever the original statistics data changes to ensure that generated SKG is synchronised with the original statistics data. On the other hand, using R2RML to generate SKG brings several benefits in comparison to the ad-hoc approach. There are many R2RML processors [morph, ontop] available which means that one is not restricted to use a particular processor and may easily use another processor if necessary. Furthermore, many of those processors have incorporated techniques for keeping the desired SKG virtual, thus eliminating the need of synchronization between the tabular data and SKG.This is done by translating SPARQL queries posed to the virtual SKG into another query supported by the underlying datasource and evaluated on the original dataset [OBDA].</p>
+                       <p>The following table summarizes our discussion regarding the approaches on transforming statistical data into SKG.</p>
                     </div>
                 </section>
 
@@ -118,7 +125,7 @@
                     <h2>References</h2>
                     <div>
                         <ol>
-		    <li id="ref-1" property="schema:citation">Priyatna, F., Corcho, O., & Sequeda, J. (2014, April). Formalisation and experiences of R2RML-based SPARQL to SQL query translation using morph. In Proceedings of the 23rd international conference on World wide web (pp. 479-490). ACM.</li>                            
+		                  <li id="ref-1" property="schema:citation">Priyatna, F., Corcho, O., & Sequeda, J. (2014, April). Formalisation and experiences of R2RML-based SPARQL to SQL query translation using morph. In Proceedings of the 23rd international conference on World wide web (pp. 479-490). ACM.</li>                            
                         </ol>
 
                     </div>
