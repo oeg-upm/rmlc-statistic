@@ -115,7 +115,7 @@ Under the following terms:
                 <figcaption>Comparison of Approaches for Transforming Statistics Data to SKG</figcaption>
             </figure>
 
-            <p>The size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated. Considering the correlation between the size of a mapping document and its complexity, i.e., the more lines it has, the more difficult it is to maintain. A crucial task is to reduce the size of the mappings to ease the mapping maintenance task. We address this challenge by proposing an approach to reduce the size of the mapping documents using an iterator that has been incorporated into RMLC, a mapping language for tabular data.</p>
+            <p>The size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated. Considering the correlation between the size of a mapping document and its complexity, i.e., the more lines it has, the more difficult it is to maintain, a crucial task is to reduce the size of the mappings to ease the mapping maintenance task. We address this challenge by proposing an approach to reduce the size of the mapping documents using an iterator that has been incorporated into RMLC, a mapping language for tabular data.</p>
 
             <p>The rest of the paper is organized as follows. <a href="#relatedwork"></a> discusses related work on the generation of knowledge graphs from heterogeneous datasets. In <a href="#rmlc"></a> we compare a naive approach of generating SKG using R2RML mappings against our proposed approach using RMLC Iterator. In <a href="#evaluation"></a> we report our experiment on generating virtual SKG from two different datasets (tourism and immigration) coming from different agencies. Finally <a href="#conclusion"></a>  concludes this paper and outlines future work.</p>    
         </section>
@@ -145,7 +145,7 @@ Under the following terms:
             <h2>Approach 1 - Naive</h2>
             <p>Given a CSV file containing statistical data, a typical way to transform it to SKG using R2RML mappings is to create one TriplesMap for each column corresponding to a slice of a dimension, for example January in Time dimension or Male in Gender dimension . The TriplesMap will have the following properties:</p>
             <ul>
-                <li><p>Its rr:logicalTable property specifies the source CSV file (<a href="#listing_1"></a>)/p></li>
+                <li><p>Its rr:logicalTable property specifies the source CSV file (<a href="#listing_1"></a>)</p></li>
                 <li><p>Its Subject Map specifies qb:Observation as the generated triples’ RDF type (<a href="#listing_2"></a>)</p></li>
                 <li><p>It will have a pair of PredicateObjectMap mappings that specify a slice of a dimension and its values (<a href="#listing_3"></a>)</p></li>
                 <li><p>It will have a PredicateObjectMap mapping that specifies which dataset the generated triples belong to (<a href="#listing_4"></a>)</p></li>
@@ -218,8 +218,8 @@ rr:predicateObjectMap[
 rr:logicalTable [
     rr:tableName "\"2016-P21\"";
     rmlc:columns ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    rmlc:dictionary {"Jan":"January","Feb":"February","Mar":"March","Apr":"April", "Jun":"June", "Jul":"July", "Aug":"August", "Sep":"September", "Oct":"October","Nov":"November","Dec":"December"};
-  ];
+    rmlc:dictionary {"Jan":"January","Feb":"February","Mar":"March","Apr":"April","Jun":"June","Jul":"July","Aug":"August","Sep":"September","Oct":"October","Nov":"November","Dec":"December"};
+];
 
                 </code></pre>
                 <figcaption>rmlc:columns example</figcaption>
@@ -234,7 +234,7 @@ rr:subjectMap [
     rr:template "http://ex.org/2016{$column}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
-  ];
+];
 &hellip;
   rr:predicateObjectMap[
 rr:predicate sltsv:month;
@@ -242,7 +242,7 @@ rr:predicate sltsv:month;
             rr:termType rr:IRI;
             rr:constant "http://reference.data.gov.uk/def/intervals/{$alias}";
     ];
-  ];
+];
 &hellip;
 rr:predicateObjectMap[
     rr:predicate sltsv:numberOfArrivals;
@@ -251,7 +251,7 @@ rr:predicateObjectMap[
         rr:column {$alias};
         rr:datatype xsd:integer;
     ];
-  ];
+];
                 </code></pre>
                 <figcaption>{$columns} and {$alias} example</figcaption>
             </figure>
@@ -268,7 +268,7 @@ rr:predicateObjectMap[
         <section id="evaluation">
             <h1>Evaluation</h1>
             <p>
-                In this section we describe our experiment of transforming two statistical datasets from two different domains and agencies: a tourism statistical dataset from the Sri Lanka Tourism Development Authority (SLTDA) and a immigration statistics from the EuroStat. For each dataset, we use both R2RML and RMLC mappings to generate virtual SKGs and evaluate three SPARQL queries for each one.
+                In this section we describe our experiment of transforming two statistical datasets from two different domains and agencies: a tourism statistical dataset from the Sri Lanka Tourism Development Authority (SLTDA) and a immigration statistics from the EuroStat. For each dataset, we use both R2RML and RMLC mappings with Morph-RDB to generate virtual SKGs and evaluate three SPARQL queries for each one.
             </p>
             <h2>Case 1: Statistics from the Sri lanka Tourism Development Authority</h2>
             <h3>Dataset and Queries</h3>
@@ -306,7 +306,7 @@ rr:predicateObjectMap[
                         <td rowspan="1" colspan="1"><p>74</p></td>
                     </tr>
                     <tr>
-                        <td rowspan="1" colspan="1"><p># TriplesMaps/#SubjectMaps</p></td>
+                        <td rowspan="1" colspan="1"><p>#TriplesMaps / #SubjectMaps</p></td>
                         <td rowspan="1" colspan="1"><p>12</p></td>
                         <td rowspan="1" colspan="1"><p>1</p></td>
                     </tr>
@@ -361,7 +361,7 @@ rr:predicateObjectMap[
                         <td rowspan="1" colspan="1"><p>&lt;70</p></td>
                     </tr>
                     <tr>
-                        <td rowspan="1" colspan="1"><p># TriplesMaps/#SubjectMaps</p></td>
+                        <td rowspan="1" colspan="1"><p>#TriplesMaps / #SubjectMaps</p></td>
                         <td rowspan="1" colspan="1"><p>&gt;40</p></td>
                         <td rowspan="1" colspan="1"><p>1</p></td>
                     </tr>
@@ -387,7 +387,7 @@ rr:predicateObjectMap[
         <!-- Acknowledgements -->
         <section role="doc-acknowledgements">
             <h1>Acknowledgments</h1>
-            <p>The acknowledgements of a document.</p>
+            <p>This research is supported by the MobileAge (H2020/693319), by the esTextAnalytics (RTC-2016-4952-7) project, from the Spanish State Investigation Agency of the MINECO and FEDER Funds and by a predoctoral grant from the I+D+i program of the Universidad Politécnica de Madrid.</p>
         </section>
         
         <!-- References -->
