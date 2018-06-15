@@ -17,7 +17,7 @@
     typeof="schema:CreativeWork sioc:Post prov:Entity">
     <main>
         <article about="" typeof="schema:ScholarlyArticle">
-            <h1 property="schema:name">Facilitating OBDA from statistical CSV data files</h1>
+            <h1 property="schema:name">Virtual Statistical Knowledge Graph Generation from CSV files</h1>
 
             <div id="authors">
                 <dl id="author-name">
@@ -36,9 +36,9 @@
                 </ul>
 
                 <ul id="author-email">
-                    <li id="author-email-a"><a about="#Idafen-Santana" rel="schema:email" href="mailto:isantana@fi.upm.es">isantana@fi.upm.es</a></li>
                     <li id="author-email-a"><a about="#David-Chaves" rel="schema:email" href="mailto:dchaves@fi.upm.es">dchaves@fi.upm.es</a></li>
                     <li id="author-email-a"><a about="#Freddy-Priyatna" rel="schema:email" href="mailto:fpriyatna@fi.upm.es">fpriyatna@fi.upm.es</a></li>
+                    <li id="author-email-a"><a about="#Idafen-Santana" rel="schema:email" href="mailto:isantana@fi.upm.es">isantana@fi.upm.es</a></li>
                     <li id="author-email-a"><a about="#Oscar-Corcho" rel="schema:email" href="mailto:ocorcho@fi.upm.es">ocorcho@fi.upm.es</a></li>
                 </ul>
             </div>
@@ -72,6 +72,24 @@
                        <p>Due to high volume and variability of data, the transformation from tabular to SKG-oriented formats requires from a process that is standard and maintainable. We identify two main approaches for transforming tabular data to Statistics Knowledge Graph (SKG). The first approach is an ad-hoc approach, such as one that has been reported in [ARAGONPAPER], in which CSV data is converted into RDF Data Cube[data cubes] using a set of custom rules. The second approach is defined on the basis of mapping languages, such as the W3C Recommendation R2RML, in which transformations are codified in an standard language, with several tools available for applying them.</p>
                        <p>In an ad-hoc approach such as reported in [ARAGONPAPER], a processor which is the main component responsible for the transformation process, is developed for a specific purpose, not being common to reuse it for other solutions. The SKG resulting from the transformation process is stored in a triple store and there is a need for repeating the transformation process whenever the original statistics data changes to ensure that generated SKG is synchronised with the original statistics data. On the other hand, using R2RML to generate SKG brings several benefits in comparison to the ad-hoc approach. There are many R2RML processors [morph, ontop] available which means that one is not restricted to use a particular processor and may easily use another processor if necessary. Furthermore, many of those processors have incorporated techniques for keeping the desired SKG virtual, thus eliminating the need of synchronization between the tabular data and SKG.This is done by translating SPARQL queries posed to the virtual SKG into another query supported by the underlying datasource and evaluated on the original dataset [OBDA].</p>
                        <p>The following table summarizes our discussion regarding the approaches on transforming statistical data into SKG.</p>
+                       <table>
+                        <caption>Comparison of Approaches for Transforming Statistics Data to SKG</caption>
+                        <thead>
+                          <tr><th>Features</th><th>Ad-Hoc</th><th>R2RML</th>
+                        </thead>
+                        <tbody>                          
+                          <tr><td>Processor Type</td><td>Solution Specific</td><td>General Purpose</td></tr>
+                          <tr><td># Processor</td><td>1</td><td>Many</td></tr>
+                          <tr><td>Materialization</td><td>Yes</td><td>Yes</td></tr>
+                          <tr><td>Virtualization</td><td>No</td><td>Yes</td></tr>
+                        </tbody>
+                      </table>
+
+                      <p>The size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated. Considering the correlation between the size of a mapping document and its complexity, i.e., the more lines it has, the more difficult it is to maintain, a crucial task is to reduce the size of the mappings to ease the mapping maintenance task. We address this challenge by proposing an approach to reduce the size of the mapping documents using an iterator that has been incorporated into RMLC, a mapping language for tabular data.</p>
+
+                      <p>  
+                      The rest of the paper is organized as follows. Section 2 discusses related work on the generation of knowledge graphs from heterogeneous datasets. In Section 3 we compare a naive approach of generating SKG using R2RML mappings against our proposed approach using RMLC Iterator. In Section 4 we report our experiment on generating virtual SKG from two different datasets (tourism and immigration) coming from different agencies.Finally Section 5 concludes this paper and outlines future work.
+                      </p>
                     </div>
                 </section>
 
