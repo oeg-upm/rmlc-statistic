@@ -60,7 +60,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
     rr:termType rr:IRI;
-    rr:constant "http://reference.data.gov.uk/def/intervals/{$alias}";
+    rr:constant "http://dbpedia.org/resource/{$alias}";
     ];
   ];
   
