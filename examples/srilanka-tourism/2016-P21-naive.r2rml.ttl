@@ -24,7 +24,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201601-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016JANUARY-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -57,7 +57,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/January";
+		rr:constant "http://dbpedia.org/resource/January";
     ];
   ];
   
@@ -65,7 +65,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "JANUARY";
+		rr:column "JAN";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -80,7 +80,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201602-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016FEBRUARY-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -113,7 +113,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/February";
+		rr:constant "http://dbpedia.org/resource/February";
     ];
   ];
   
@@ -121,7 +121,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "FEBRUARY";
+		rr:column "FEB";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -136,7 +136,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201603-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016MARCH-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -169,7 +169,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/March";
+		rr:constant "http://dbpedia.org/resource/March";
     ];
   ];
   
@@ -177,7 +177,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "MARCH";
+		rr:column "MAR";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -193,7 +193,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201604-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016APRIL-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -226,7 +226,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/April";
+		rr:constant "http://dbpedia.org/resource/April";
     ];
   ];
   
@@ -234,7 +234,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "APRIL";
+		rr:column "APR";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -250,7 +250,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201605-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016MAY-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -283,7 +283,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/May";
+		rr:constant "http://dbpedia.org/resource/May";
     ];
   ];
   
@@ -307,7 +307,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201606-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016JUNE-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -340,7 +340,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/June";
+		rr:constant "http://dbpedia.org/resource/June";
     ];
   ];
   
@@ -348,7 +348,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "JUNE";
+		rr:column "JUN";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -364,7 +364,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201607-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016JULY-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -397,7 +397,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/July";
+		rr:constant "http://dbpedia.org/resource/July";
     ];
   ];
   
@@ -405,7 +405,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "JULY";
+		rr:column "JUL";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -421,7 +421,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201608-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016AUGUST-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -454,7 +454,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/August";
+		rr:constant "http://dbpedia.org/resource/August";
     ];
   ];
   
@@ -462,7 +462,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "AUGUST";
+		rr:column "AUG";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -478,7 +478,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201609-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016SEPTEMBER-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -511,7 +511,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/September";
+		rr:constant "http://dbpedia.org/resource/September";
     ];
   ];
   
@@ -519,7 +519,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "SEPTEMBER";
+		rr:column "SEP";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -535,7 +535,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201610-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016OCTOBER-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -568,7 +568,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/October";
+		rr:constant "http://dbpedia.org/resource/October";
     ];
   ];
   
@@ -576,7 +576,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "OCTOBER";
+		rr:column "OCT";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -592,7 +592,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201611-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016NOVEMBER-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -625,7 +625,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/November";
+		rr:constant "http://dbpedia.org/resource/November";
     ];
   ];
   
@@ -633,7 +633,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "NOVEMBER";
+		rr:column "NOV";
 		rr:datatype xsd:integer;
     ];
   ];
@@ -649,7 +649,7 @@
 
   rr:subjectMap [
     a rr:Subject;
-    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/201612-From-{COUNTRYOFRESIDENCE}";
+    rr:template "http://w3id.org/sri-lanka/tourism/values/arrivals-country-year-month/2016DECEMBER-From-{COUNTRYOFRESIDENCE}";
     rr:termType rr:IRI;
     rr:class qb:Observation;
   ];
@@ -682,7 +682,7 @@
 	rr:predicate sltsv:month;
 	rr:objectMap [
 		rr:termType rr:IRI;
-		rr:constant "http://reference.data.gov.uk/def/intervals/December";
+		rr:constant "http://dbpedia.org/resource/December";
     ];
   ];
   
@@ -690,7 +690,7 @@
 	rr:predicate sltsv:numberOfArrivals;
 	rr:objectMap [
 		rr:termType rr:Literal;
-		rr:column "DECEMBER";
+		rr:column "DEC";
 		rr:datatype xsd:integer;
     ];
   ];
