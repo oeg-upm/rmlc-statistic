@@ -59,7 +59,7 @@ Under the following terms:
         <meta about="#organization-1" property="schema:name" content="Ontology Engineering Group, Universidad Politécnica de Madrid, Spain"/>
         
         <!-- Paper keywords (one or more) -->
-        <meta property="prism:keyword" content="Statistical Data"/>
+        <meta property="prism:keyword" content="Statistics Data"/>
         <meta property="prism:keyword" content="R2RML"/>
         <meta property="prism:keyword" content="RDF Cube"/>
         <meta property="prism:keyword" content="RMLC"/>
@@ -71,18 +71,17 @@ Under the following terms:
         <!-- Abstract -->
         <section role="doc-abstract">
             <h1>Abstract</h1>
-            <p>Statistical data is often published as tabular data by statistical offices and governmental agencies. In last years, many of these institutions have addressed an interoperable way of releasing their data, by means of semantic technologies. Existing approaches normally employ ad-hoc techniques to transform this tabular data to Statistics Knowledge Graph (SKG) and materialize it. This approach imposes the need of periodical maintenance to ensure the synchronization between the dataset and the transformation result. Using R2RML, the W3C mapping language recommendation, the generation of virtual SKG is possible thanks to the capability of its processors. However, as the size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated, it may be prohibitively large, hindering its maintenance. In this paper we propose an approach to reduce the size of the mapping document by extending RMLC, a mapping language for tabular data. We provide a mapping translator from RMLC to R2RML and a comparative analysis over two different real statistics datasets.<p>
+            <p>Statistics data is often published as tabular data by statistics offices and governmental agencies. In last years, many of these institutions have addressed an interoperable way of releasing their data, by means of semantic technologies. Existing approaches normally employ ad-hoc techniques to transform this tabular data to the Statistics Knowledge Graph (SKG) and materialize it. This approach imposes the need of periodical maintenance to ensure the synchronization between the dataset and the transformation result. Using R2RML, the W3C mapping language recommendation, the generation of virtual SKG is possible thanks to the capability of its processors. However, as the size of the R2RML mapping documents depends on the number of columns in the tabular data and the number of dimensions to be generated, it may be prohibitively large, hindering its maintenance. In this paper we propose an approach to reduce the size of the mapping document by extending RMLC, a mapping language for tabular data. We provide a mapping translator from RMLC to R2RML and a comparative analysis over two different real statistics datasets.<p>
             <p> <strong>Following editors instructions, this paper has been also published as an HTML document online<a href="#online"></a> for the review process</strong></p>
         </section>
         
         <!-- Sections -->
         <section id="introduction">
             <h1>Introduction</h1>
-            <p>Statistical data is one of the most common ways of sharing public information nowadays. PDF, HTML and, especially, CSV format, are some of the most used formats of tabular data being published on the web by statistical agencies. Whereas this is still the main trend, many agencies worldwide are embracing semantic technologies for publishing their resources as Statistics Knowledge Graph (SKG). In many cases both formats co-exist, allowing to access the information in different ways.</p>
-            <p>Due to high volume and variability of data, the transformation from tabular to SKG-oriented formats requires a process that is standard and maintainable. We identify two main approaches for transforming tabular data to Statistics Knowledge Graph (SKG). The first approach is an ad-hoc approach, such as one that has been reported in <a href="#ocorcho2017publishing"></a>, in which CSV data is converted into RDF Data Cube<a href="#cube2014"></a> using a set of custom rules. The second approach is defined on the basis of mapping languages, such as the W3C Recommendation R2RML, in which transformations are codified in an standard language, with several tools available for applying them.</p>
-            <p>In an ad-hoc approach such as the one reported in <a href="#ocorcho2017publishing"></a>, a processor which is the main component responsible for the transformation process, is developed for a specific purpose. Those processors are not commonly used for other solutions. The SKG resulting from the transformation process is stored in a triple store and there is a need for repeating the transformation process whenever the original statistics data changes to ensure that generated SKG is synchronised with the original statistics data. On the other hand, using R2RML to generate SKG brings several benefits in comparison to the ad-hoc approach. There are many R2RML processors <a href="#priyatna2014formalisation"></a><a href="#calvanese2017ontop"></a> available which means that one is not restricted to use a particular processor and may easily use another if necessary. Furthermore, many of those processors have incorporated techniques for keeping the desired SKG virtual, thus eliminating the need of synchronization between the tabular data and SKG. This is achieved by translating SPARQL queries posed to the virtual SKG into another query supported by the underlying datasource and evaluated on the original dataset <a href="#poggi2008linking"></a>.
-            </p>
-            <p><a href="#table_1"></a> summarizes our discussion regarding the approaches on transforming statistical data into SKG.</p>
+            <p>Statistics data is one of the most common ways of sharing public information nowadays. PDF, HTML and, especially, CSV format, are some of the most used formats of tabular data being published on the web by statistics agencies. Whereas this is still the main trend, many agencies worldwide are embracing semantic technologies for publishing their resources as Statistics Knowledge Graph (SKG), which is the knowledge graph on the web that stores and allows access to statistics linked data. In many cases both formats co-exist, allowing to access the information in different ways.</p>
+            <p>Due to high volume and variability of data, the transformation from tabular to SKG-oriented formats requires a process that is standard and maintainable. We identify two main approaches for transforming tabular data to Statistics Knowledge Graph (SKG). The first approach is an ad-hoc approach, such as one that has been reported in <a href="#ocorcho2017publishing"></a>, in which CSV data is converted into RDF Data Cube <a href="#cube2014"></a> using a set of custom rules. The second approach is defined on the basis of mapping languages, such as the RDB2RDF W3C Recommendation, R2RML, in which transformations are codified in an standard language, with several tools available for applying them.</p>
+            <p>In an ad-hoc approach <a href="#ocorcho2017publishing"></a>, a processor which is the main component responsible for the transformation process, is developed for a specific purpose. Those processors are not commonly used for other solutions. The SKG resulting from the transformation process is stored in a triple store and there is a need for repeating the transformation process whenever the original statistics data changes to ensure that generated SKG is synchronised with the original statistics data. On the other hand, using R2RML to generate SKG brings several benefits in comparison to the ad-hoc approach. There are many R2RML processors <a href="#priyatna2014formalisation"></a><a href="#calvanese2017ontop"></a> available which means that one is not restricted to use a particular processor and may easily use another if necessary. Furthermore, many of those processors have incorporated techniques for keeping the desired SKG virtual, thus eliminating the need of synchronization between the tabular data and SKG. A virtualization process is highly recommended when the data published is volatile because it ensures that the retrieved data is updated. This is achieved by translating SPARQL queries posed to the virtual SKG into another query supported by the underlying data source and evaluated on the original dataset <a href="#poggi2008linking"></a>.
+            <a href="#table_1"></a> summarizes our discussion regarding the approaches on transforming statistical data into SKG.</p>
             <figure id="table_1">
                 <table>
                     <tr>
@@ -115,7 +114,7 @@ Under the following terms:
                 <figcaption>Comparison of Approaches for Transforming Statistics Data to SKG</figcaption>
             </figure>
 
-            <p>The size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated. Considering the correlation between the size of a mapping document and its complexity, i.e., the more lines it has, the more difficult it is to maintain, a crucial task is to reduce the size of the mappings to ease the mapping maintenance task. We address this challenge by proposing an approach to reduce the size of the mapping documents using an iterator that has been incorporated into RMLC<a href="#rmlc"></a>, a mapping language for tabular data.</p>
+            <p>The size of the R2RML mapping documents depends on the number of columns in the tabular data and number of dimensions to be generated. For example, a CSV file that contains data from all the European countries will need an R2RML mapping with one section defined the required dimensions for each country. Considering the correlation between the size of a mapping document and its complexity, i.e., the more lines it has, the more difficult it is to maintain, a crucial task is to reduce the size of the mappings to ease the mapping maintenance task. We address this challenge by proposing an approach to reduce the size of the mapping documents using an iterator that has been incorporated into RMLC<a href="#rmlc"></a>, an RDF Mapping Language for heterogeneous CSV files.</p>
 
             <p>The rest of the paper is organized as follows. <a href="#relatedwork"></a> discusses related work on the generation of knowledge graphs from heterogeneous datasets. In <a href="#rmlc_section"></a> we compare a naive approach of generating SKG using R2RML mappings against our proposed approach using RMLC Iterator. In <a href="#evaluation"></a> we report our experiment on generating virtual SKG from two different datasets (tourism and immigration) coming from different agencies. Finally <a href="#conclusion"></a>  concludes this paper and outlines future work.</p>    
         </section>
@@ -123,27 +122,27 @@ Under the following terms:
         <section id="relatedwork">
             <h1>Related Work</h1>
             <p>
-                Several mapping languages have been proposed in the state of the art for the provision of ontology-based access to structured or semi-structured data (e.g. relational databases, XML, JSON, CSV). OBDA approaches can be focused on query translation only (e.g., RDB2RDF approaches) or may also consider query rewriting, where ontology-based reasoning is also taken into account in the rewriting process.There is a variety of algorithms for query rewriting and query translation, which may come with optimizations depending on the characteristics of data sources, mappings and ontologies. 
+                Several mapping languages have been proposed in the state of the art for the provision of ontology-based access to structured or semi-structured data (e.g. relational databases, XML, JSON, CSV). Ontology Based Data Access (OBDA) approaches can be focused on query translation only (e.g., RDB2RDF approaches) or may also consider query rewriting, where ontology-based reasoning is also taken into account in the rewriting process. There is a variety of algorithms for query rewriting and query translation, which may come with optimizations depending on the characteristics of data sources, mappings and ontologies.
             </p>
             <p>
-                The most relevant mapping language is R2RML<a href="#das2012r2rml"></a>, a W3C recommendation focused on describing mappings to transform RDB data into RDF, which is now supported by most OBDA or RDB2RDF systems. Several works have focused on the formalization of the query translation process (from SPARQL to SQL), and on the proposal of performance improvements of the resulting queries. For example, in <a href="#priyatna2014formalisation"></a> authors adapt the algorithm defined in <a href="#chebotko2009semantics"></a> with R2RML mappings, including optimisations. This is also similar in the work described in <a href="#rodriguez2015efficient"></a>. Both systems allow querying CSV files by importing them into a relational database or by delegating their treatment to a SQL federated tool <a href="#calvanese2017ontop"></a>, respectively. For example, the work presented in <a href="#areti"></a> uses R2RML to generate materialized SKG from tabular files.
+                The most relevant mapping language is R2RML <a href="#das2012r2rml"></a>, a W3C recommendation focused on describing mappings to transform RDB data into RDF, which is now supported by most OBDA or RDB2RDF systems. Several works have focused on the formalization of the query translation process (from SPARQL to SQL), and on the proposal of performance improvements of the resulting queries. For example, in <a href="#priyatna2014formalisation"></a> authors adapt the algorithm defined in <a href="#chebotko2009semantics"></a> with R2RML mappings, including optimisations. This is also similar in the work described in <a href="#rodriguez2015efficient"></a>. Both systems allow querying CSV files by importing them into a relational database or by delegating their treatment to a SQL federated tool <a href="#calvanese2017ontop"></a>, respectively. In the statistics field there are also works <a href="#areti"></a> that use R2RML to generate materialized SKG from tabular files.
             </p>
             <p>
                 Other works have focused on extending or adapting mapping languages with new features or providing access to other data formats. The de-facto standard for transforming data from JSON, XML or CSV to RDF is RML<a href="#dimou2014rml"></a>. However, the RML implementation (RML-Mapper<a href="#rml-mapper"></a>) only provides support for materialization, that is, a full transformation of the input dataset into RDF. xR2RML <a href="#michel2015translation"></a> is an RML extension that provides a way to query MongoDB and JSON files. 
             </p>
             <p>
-                A lot of work has been made translating CSV files and spreadsheets to RDF, like XLWrap <a href="#langegger2009xlwrap"></a> or SML <a href="#stadler2015simplified"></a> and tools like Tarql<a href="#tarql"></a>, Vertere-RDF<a href="#vertere-rdf"></a> or CSV2RDF<a href="#csv2rdf"></a>. 
+                A lot of work has been made translating CSV files and spreadsheets to RDF, like XLWrap <a href="#langegger2009xlwrap"></a> or SML <a href="#stadler2015simplified"></a> and tools like Tarql<a href="#tarql"></a>, Vertere-RDF<a href="#vertere-rdf"></a> or CSV2RDF<a href="#csv2rdf"></a>. Other works provide an user interface to ease the transformation process from tabular data to RDF like QBer <a href="#hoekstra2016"></a> or Karma <a href="#knoblock2012"></a>. The uptake of the CSV on the Web W3C Recommendation <a href="#tennison2015"></a> is also still low.
             </p>
             <p>
-                These approaches are mainly focused on materialization process, which is not suitable when the dataset is dynamic. In any case, none of those approaches deal with the reduction of the mapping size, so the maintenance problem remains.
+               These approaches are mainly focused on materialization process, which is not suitable when the dataset is dynamic. In any case, for the best of our knowledge, none of those approaches deal with the reduction of the mapping size, so the maintenance problem remains.
             </p>
         </section>
 
         <section id="rmlc_section">
             <h1>From CSV to OBDA</h1>
-            <p>In this section we discuss and exemplify two different ways for transforming tabular data to SKG, the first one being the baseline which allows to illustrate the advantages of our approach.</p>
+            <p>In this section we discuss and exemplify two different approaches for transforming tabular data to SKG, the first one being the baseline which allows to illustrate the advantages of our approach.</p>
             <h2>Approach 1 - Naive</h2>
-            <p>Given a CSV file containing statistical data, a typical way to transform it to SKG using R2RML mappings is to create one TriplesMap for each column corresponding to a slice of a dimension, for example January in Time dimension or Male in Gender dimension . The TriplesMap will have the following properties:</p>
+            <p>Given a CSV file containing statistics data, a typical way to transform it to SKG using R2RML mappings is to create one TriplesMap for each column corresponding to a slice of a dimension, for example January in Time dimension or Male in Gender dimension. The TriplesMap will have the following properties:</p>
             <ul>
                 <li><p>Its rr:logicalTable property specifies the source CSV file (<a href="#listing_1"></a>)</p></li>
                 <li><p>Its Subject Map specifies qb:Observation as the generated triples’ RDF type (<a href="#listing_2"></a>)</p></li>
@@ -193,10 +192,10 @@ rr:predicateObjectMap[
             </figure>
  
 
-            <p>Considering that a typical statistical CSV file contains many columns, the size of the R2RML mapping document grows linearly with the number of columns. The main issue with the first approach is the size of the R2RML/RML mapping, where the mapping expert has to create a TriplesMap for each column to answer the desirable SPARQL queries, as we will show in the Evaluation section.</p>
+            <p>Considering that a typical statistics CSV file contains many columns, the size of the R2RML mapping document grows linearly with the number of columns. The main issue with the first approach is the size of the R2RML/RML mapping, where the mapping expert has to create a TriplesMap for each column to answer the desirable SPARQL queries, as we will show in the Evaluation section.</p>
 
             <h2>Approach 2 - RMLC iterator</h2>
-            <p>In this approach, we aim to reduce the size of a R2RML mapping for statistical data by incorporating an iterator variable into RMLC. This mapping language has been equipped with several features to be able to deal with the heterogeneity of tabular data. For example, the exploitation of implicit relations among CSV files, or the creation of an enriched database schema based on the information provided by the mappings and the datasets<a href="#rmlc-csv"></a>.</p>
+            <p>In this approach, we aim to reduce the size of a R2RML mapping for statistics data by incorporating an iterator variable into RMLC. This mapping language has been equipped with several features to be able to deal with the heterogeneity of tabular data. For example, the exploitation of implicit relations among CSV files, or the creation of an enriched database schema based on the information provided by the mappings and the datasets<a href="#rmlc-csv"></a>.</p>
             <p>We identify that the only difference between those TriplesMaps is the name of the column, which provides a unique identifier to the TriplesMap object and the access to the data of each column. By incorporating a variable that references the target columns, RMLC-Iterator reduces the size of the mapping while maintaining the semantics of the R2RML mapping. This variable is formalized in the mapping language by incorporating four new properties (<a href="#figure_1"></a>) to the Logical Table object:</p>
 
             <ul>
@@ -210,15 +209,15 @@ rr:predicateObjectMap[
                 <p>
                     <img src="./images/rmlc.png"/>
                 </p>
-                <figcaption>RMLC extension for statistical tabular data</figcaption>
+                <figcaption>RMLC extension for statistics tabular data</figcaption>
             </figure>
 
             <figure id="listing_5">
                 <pre><code>
 rr:logicalTable [
     rr:tableName "\"2016-P21\"";
-    rmlc:columns ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    rmlc:dictionary {"Jan":"January","Feb":"February","Mar":"March","Apr":"April","Jun":"June","Jul":"July","Aug":"August","Sep":"September","Oct":"October","Nov":"November","Dec":"December"};
+    rmlc:columns ["Jan","Oct",Dec"];
+    rmlc:dictionary {"Jan":"January","Oct":"October","Dec":"December"};
 ];
 
                 </code></pre>
@@ -236,11 +235,11 @@ rr:subjectMap [
     rr:class qb:Observation;
 ];
 &hellip;
-  rr:predicateObjectMap[
-rr:predicate sltsv:month;
+rr:predicateObjectMap[
+    rr:predicate sltsv:month;
     rr:objectMap [
-            rr:termType rr:IRI;
-            rr:constant "http://reference.data.gov.uk/def/intervals/{$alias}";
+        rr:termType rr:IRI;
+        rr:constant "http://reference.data.gov.uk/def/intervals/{$alias}";
     ];
 ];
 &hellip;
@@ -256,11 +255,11 @@ rr:predicateObjectMap[
                 <figcaption>{$column} and {$alias} example</figcaption>
             </figure>
 
-          <p><a href="#listing_5"></a> depicts an example of the usage of the rmlc:columns property, in which the subset of the CSV columns to be used in the transformation process is specified. This property is defined using a LogicalTable object. We use the rmlc:dictionary (or its corresponding rmlc:dictionaryFile) property to establish a correlation between a column and its alias, that is useful in some parts of the mappings.</p>
+          <p><a href="#listing_5"></a> depicts an example of the usage of the rmlc:columns property, in which the subset of the CSV columns to be used in the transformation process is specified. This property is defined using a LogicalTable object. We use the rmlc:dictionary (or its corresponding rmlc:dictionaryFile) property to establish a correlation between a column and its alias, that is useful in some parts of the mappings. These properties are based on JSON syntax for easing their creation to the mapping editors.</p>
 
-          <p>During the mapping translation process, the variables are replaced with the name of each column or its alias, as defined in the LogicalTable object. The resulting R2RML mapping contains as many TriplesMap objects as the number of columns specified in the RMLC properties. In this example, the identifier of each TriplesMap, the URI of the subjects and the object of the sltsv:numberOfArrivals predicates, include the variables so they will be replaced with the name of a column or its alias. The R2RML mapping will contain six TriplesMap objects, one for each defined column. All the iterator variables can be specified anywhere in the mapping, as shown in <a href="#listing_6"></a>, using the {$column} or {$alias} syntax. </p>
+          <p>During the mapping translation process, the variables are replaced with the name of each column or its alias, as defined in the LogicalTable object. The resulting R2RML mapping contains as many TriplesMap objects as the number of columns specified in the RMLC properties. In this example, the identifier of each TriplesMap, the URI of the subjects and the object of the sltsv:numberOfArrivals predicates, include the variables so they will be replaced with the name of a column or its alias. The R2RML mapping will contain three TriplesMap objects, one for each defined column. All the iterator variables can be specified anywhere in the mapping, as shown in <a href="#listing_6"></a>, using the {$column} or {$alias} syntax. </p>
 
-          <p>In order to ensure that RMLC-Iterator aligns with R2RML, we have developed a mapping translator that converts its mapping document with an iterator variable to a R2RML mapping with multiple TriplesMap objects. In this way, we reduce the size of the R2RML mapping document, minimizing the time of the mapping creation and supporting an easier maintenance. Besides, as RMLC is aligned to R2RML, any R2RML available processor is able to deal with our approach. In our case, we integrate the RMLC-processor<a href="#rmlc-statistic"></a> with Morph-RDB<a href="#morph-rdb"></a> to query statistical data using SPARQL.</p>
+          <p>In order to ensure that RMLC-Iterator aligns with R2RML, we have developed a mapping translator that converts its mapping document with an iterator variable to a R2RML mapping with multiple TriplesMap objects. In this way, we reduce the size of the R2RML mapping document, minimizing the time of the mapping creation and supporting an easier maintenance. Besides, as RMLC is aligned to R2RML, any R2RML available processor is able to deal with our approach. In our case, we integrate the RMLC-processor<a href="#rmlc-statistic"></a> with Morph-RDB<a href="#morph-rdb"></a> to query statistics data using SPARQL.</p>
 
         </section>
 
@@ -268,32 +267,31 @@ rr:predicateObjectMap[
         <section id="evaluation">
             <h1>Evaluation</h1>
             <p>
-                In this section we describe our experiment of transforming two statistical datasets from two different domains and agencies: a tourism statistical dataset from the Sri Lanka Tourism Development Authority (SLTDA) and a immigration statistics from the EuroStat. For each dataset, we use both R2RML and RMLC mappings with Morph-RDB to generate virtual SKGs and evaluate three SPARQL queries for each one.
+                In this section we describe our experiment of transforming two statistics datasets from two different domains and agencies: a tourism statistics dataset from the Sri Lanka Tourism Development Authority (SLTDA) and a immigration statistics from the EuroStat. For each dataset, we use both R2RML and RMLC mappings with Morph-RDB to generate virtual SKGs and evaluate three SPARQL queries for each one. All the datasets, queries, results, code and mapping are available online<a href="#rmlc-statistic"></a>.
             </p>
             <h2>Case 1: Statistics from the Sri lanka Tourism Development Authority</h2>
             <h3>Dataset and Queries</h3>
             <p>
-                The Sri Lanka Tourism Development Authority performs data collection and market research about tourism in Sri Lanka and publishes comprehensive statistics as PDF files<a href="#fnSrilankaPDF"></a>. We use tabula-java<a href="#fnTabulaJava"></a> to extract these statistics as CSV files and make them available online<a href="#fnSrilankaCSV"></a>. For example, the CSV file that contains the number of passengers grouped by countries (y-axis) and the arrival months (x-axis) in 2016. 
+                The Sri Lanka Tourism Development Authority performs data collection and market research about tourism in Sri Lanka and publishes comprehensive statistics as PDF files<a href="#fnSrilankaPDF"></a>. We use tabula-java<a href="#fnTabulaJava"></a> to extract these statistics as CSV files and make them available online. For example, the CSV file that contains the number of passengers grouped by countries (y-axis) and the arrival months (x-axis) in 2016. 
             </p>
             <p>
-                Our intention is to transform that CSV file into a virtual SKG<a href="#fnSrilankaRDF"></a>.
-                Because this SKG is not materialized, there is no need to store it in a dedicated triple store. Any R2RML engine with query translation support will be able to answer SPARQL queries posed to the dataset. For example, consider the following three queries:
+                Our intention is to transform that CSV file into a virtual SKG. Because this SKG is not materialized, there is no need to store it in a dedicated triple store. Any R2RML engine with query translation support will be able to answer SPARQL queries posed to the dataset. For example, consider the following three queries:
             </p>
             <ul>
-                <li><p>Q1<a href="#fnSrilankaQ1"></a>: Retrieve observations of the number of incoming tourist originated from Spain in 2016. The result of evaluating this query is available online<a href="#fnSrilankaQ1Result"></a>.</p></li>
+                <li><p>Q1: Retrieve observations of the number of incoming tourist originated from Spain in 2016.</p></li>
                 
-                <li><p>Q2<a href="#fnSrilankaQ2"></a>: Retrieve observation of the number of incoming tourists in May 2016. The result of evaluating this query is available online<a href="#fnSrilankaQ2Result"></a>.</p></li>
+                <li><p>Q2: Retrieve observation of the number of incoming tourists in May 2016.</p></li>
                 
-                <li><p>Q3<a href="#fnSrilankaQ3"></a>: Can be seen as the combination between Q1 and Q2, i.e., retrieve observations of the number of incoming tourists from Spain in May 2016. The result of evaluating this query is available online<a href="#fnSrilankaQ3Result"></a>.</p></li>
+                <li><p>Q3: Can be seen as the combination between Q1 and Q2, i.e., retrieve observations of the number of incoming tourists from Spain in May 2016.</p></li>
             </ul>
             <h3>Mappings</h3>
             <p>
-                The R2RML mapping document generated using the naive approach described in the previous section can be found online<a href="#fnSrilankaR2RML"></a>. It contains 12 TriplesMaps and around 700 lines. Each TriplesMap describes the transformation rules of the number of arriving passengers every month of the year. Except for those PredicateObjectMap properties corresponding to the name the CSV columns, all TripleMaps have identical values.
+                The R2RML mapping document generated using the naive approach described in the previous section contains 12 TriplesMaps and around 700 lines. Each TriplesMap describes the transformation rules of the number of arriving passengers every month of the year. Except for those PredicateObjectMap properties corresponding to the name the CSV columns, all TripleMaps have identical values.
             </p>
             <p>
-                On the contrary, the corresponding RMLC mappings, either with rmlc:column property<a href="#fnSrilankaRMLCColumns"></a>  or with rmlc:range property<a href="#fnSrilankaRMLCRange"></a> have only 74 lines in total with 1 TriplesMap and 5 PredicateObject mappings.
+                On the contrary, the corresponding RMLC mappings, either with rmlc:column property or with rmlc:range property have only 74 lines in total with 1 TriplesMap and 5 PredicateObject mappings. The <a href="#table_3"></a> summarizes the characteristics of the mappings.
             </p>
-            <figure id="table_1">
+            <figure id="table_3">
                 <table>
                     <tr>
                         <th rowspan="1" colspan="1"></th>
@@ -321,34 +319,25 @@ rr:predicateObjectMap[
             <h2>Case 2: EuroStat - Immigration Statistics</h2>
             <h3>Dataset and Queries</h3>
             <p>
-                Eurostat<a href="#fnEuroStat"></a> the statistical office of the European Union. Its main responsibility is to provide statistical information about European Union such as economy, finance, population, industry, etc.
-            </p>
-            <p>
-                In this example, we consider a dataset containing the number of immigrants that have arrived in European countries available online<a href="#fnEuroStatImmigrationWeb"></a>.
-            </p>
-            <p>
-                We downloaded the aforementioned dataset as a CSV file containing the number of immigrants grouped by countries (x-asis) and years (y-axis) that can be found online<a href="#fnEuroStatImmigrationCSV"></a>.
-            </p>
-            <p>
-                The desired virtual SKG, if it would have been materialized, is available online<a href="#fnEuroStatImmigrationRDF"></a>. We have created three SPARQL queries, similar to the ones in the previous example.
+                Eurostat<a href="#fnEuroStat"></a> the statistical office of the European Union. Its main responsibility is to provide statistical information about European Union such as economy, finance, population, industry, etc. In this example, we consider a dataset containing the number of immigrants that have arrived in European countries available online<a href="#fnEuroStatImmigrationWeb"></a>. We downloaded the aforementioned dataset as a CSV file containing the number of immigrants grouped by countries (x-asis) and years (y-axis). We have created three SPARQL queries, similar to the ones in the previous example:
             </p>
             <ul>
-                <li><p>Q1<a href="#fnEuroStatImmigrationQ1"></a>: Retrieve the number of immigrants arriving in Spain. The result of this query can be found online<a href="#fnEuroStatImmigrationQ1Result"></a>.</p></li>
+                <li><p>Q1: Retrieve the number of immigrants arriving in Spain.</p></li>
                 
-                <li><p>Q2<a href="#fnEuroStatImmigrationQ2"></a>: Retrieve the number of immigrants arriving in any of European Countries in the year of 2015. The result of this query is available online<a href="#fnEuroStatImmigrationQ2Result"></a>.</p></li>
+                <li><p>Q2: Retrieve the number of immigrants arriving in any of European Countries in the year of 2015.</p></li>
                 
-                <li><p>Q3<a href="#fnEuroStatImmigrationQ3"></a>: Retrieve the number of immigrants arriving in Spain in the year of 2015. The result of this query is available online<a href="#fnEuroStatImmigrationQ3Result"></a>.</p></li>
+                <li><p>Q3: Retrieve the number of immigrants arriving in Spain in the year of 2015.</p></li>
             </ul>
 
             <h3>Mappings</h3>
             <p>
-                Generating the naive mapping described in the first approach is not feasible in this case, as there is a need to generate a TriplesMap for each column that represents a country and the dataset contains more than 40 columns. Instead, we generate two RMLC mapping documents,one with rmlc:columns property<a href="#fnEuroStatImmigrationRMLCColumns"></a> and the other with rmlc:range property<a href="#fnEuroStatImmigrationRMLCRange"></a>. Then we use the RMLC Processor to generate the naive version of R2RML<a href="#fnEuroStatImmigrationR2RML"></a>.
+                Generating the naive mapping described in the first approach is not feasible in this case, as there is a need to generate a TriplesMap for each column that represents a country and the dataset contains more than 40 columns. Instead, we generate two RMLC mapping documents,one with rmlc:columns property and the other with rmlc:range property. Then we use the RMLC Processor to generate the naive version of R2RML.
             </p>
 
             <p>
-                The RMLC mapping document (either version) contains only 1 TriplesMap and 4 PredicateObjectMap mappings, totalling less than 70 lines. On the contrary, the generated R2RML mapping document has more than 40 TriplesMap, more than 170 PredicateObjectMap mappings, totaling more than 2800 lines. The following table summarizes the characteristics of the mappings.
+                 The RMLC mapping document (either version) contains only 1 TriplesMap and 4 PredicateObjectMap mappings, totalling less than 70 lines. On the contrary, the generated R2RML mapping document has more than 40 TriplesMap, more than 170 PredicateObjectMap mappings, totalling more than 2800 lines. The <a href="#table_2"></a> summarizes the characteristics of the mappings.
             </p>
-            <figure id="table_1">
+            <figure id="table_2">
                 <table>
                     <tr>
                         <th rowspan="1" colspan="1"></th>
@@ -378,7 +367,7 @@ rr:predicateObjectMap[
 
         <section id="conclusion">
         <h1>Conclusion and Future Work</h1>
-        <p>In this paper we have discussed and compared the approaches to generate virtual SKG from statistical datasets: using R2RML mappings and using RMLC mappings. We apply those approaches to two real statistical datasets and showed that the approach using RMLC mapping drastically reduces the size of the R2RML mapping documents.</p>
+        <p>In this paper we have discussed and compared the approaches to generate virtual SKG from statistics datasets: using R2RML mappings and an extension of RMLC mappings including iterator variables. We apply those approaches to two real statistics datasets and showed that the approach using RMLC mapping drastically reduces the size of the R2RML mapping documents. Besides, as we provide a mechanism to transform the RMLC mapping to R2RML mappings, the performance of the virtualization process is not affected.</p>
 
         <p>While it is now much easier to work with RMLC mappings, they still need to be generated manually using text editors that are not specifically designed to generate RMLC mappings. In the future we plan to develop a mapping editor for RMLC in order to facilitate ease generating of the mappings.</p>
         </section>
@@ -387,7 +376,7 @@ rr:predicateObjectMap[
         <!-- Acknowledgements -->
         <section role="doc-acknowledgements">
             <h1>Acknowledgments</h1>
-            <p>This research is supported by the MobileAge (H2020/693319), by the esTextAnalytics (RTC-2016-4952-7) project, from the Spanish State Investigation Agency of the MINECO and FEDER Funds and by a predoctoral grant from the I+D+i program of the Universidad Politécnica de Madrid.</p>
+            <p>This research is supported by the MobileAge (H2020/693319) and </p>
         </section>
         
         <!-- References -->
@@ -397,7 +386,7 @@ rr:predicateObjectMap[
                 <li id="ocorcho2017publishing" role="doc-biblioentry"><p>Oscar Corcho, Idafen Santana-Pérez, Hugo Lafuente, David Portolés, César Cano Alfredo Peris, José María Subero: "Publishing Linked Statistical Data: Aragón, a Case Study", Proceedings of the Joint Proceedings of the International Workshops on Hybrid Statistical Semantic Understanding and Emerging Semantics, and Semantic Statistics (HybridSemStats), 2017</p></li>
                 <li id="cube2014" role="doc-biblioentry"><p>Cyganiak, R., Reynolds, D., & Tennison, J. (2012). The RDF Data Cube Vocabulary, W3C Recommendation 16 January 2014. World Wide Web Consortium.</p></li>
                 <li id="priyatna2014formalisation" role="doc-biblioentry"><p>Priyatna, F., Corcho, O., & Sequeda, J. (2014, April). Formalisation and experiences of R2RML-based SPARQL to SQL query translation using morph. In Proceedings of the 23rd international conference on World wide web (pp. 479-490). ACM.</p></li>
-                <li id="calvanese2017ontop" role="doc-biblioentry"><p>Calvanese, D., Cogrel, B., Komla-Ebri, S., Kontchakov, R., Lanti, D., Rezk, M., ... & Xiao, G. (2017). Ontop: Answering SPARQL queries over relational databases. Semantic Web, 8(3), 471-487.</p></li>
+                <li id="calvanese2017ontop" role="doc-biblioentry"><p>D. Calvanese, B. Cogrel, S. Komla-Ebri, R. Kontchakov, D. Lanti, M. Rezk, M. RodriguezMuro, and G. Xiao (2017). Ontop: Answering SPARQL queries over relational databases. Semantic Web, 8(3), 471-487.</p></li>
                 <li id="poggi2008linking" role="doc-biblioentry"><p>Poggi, A., Lembo, D., Calvanese, D., De Giacomo, G., Lenzerini, M., & Rosati, R. (2008). Linking data to ontologies. In Journal on data semantics X (pp. 133-173). Springer, Berlin, Heidelberg.</p></li>
                 <li id="das2012r2rml" role="doc-biblioentry"><p>RDF Mapping Language, W3C Recommendation 27 September 2012. Cambridge, MA: World Wide Web Consortium (W3C) (www.w3.org/TR/r2rml) (2012).</p></li>
                 <li id="chebotko2009semantics" role="doc-biblioentry"><p>Artem Chebotko, Shiyong Lu, and Farshad Fotouhi. 2009. Semantics preserving SPARQL-to-SQL translation. Data &amp; Knowledge Engineering 68, 10 (2009), 973–1000</p></li>
@@ -407,12 +396,13 @@ rr:predicateObjectMap[
                 <li id="michel2015translation" role="doc-biblioentry"><p>Franck Michel, Loıc Djimenou, Catherine Faron-Zucker, and Johan Montagnat. 2015. Translation of relational and non-relational databases into RDF with xR2RML. In 11th International Conference on Web Information Systems and Technologies (WEBIST’15). 443–454.</p></li>
                 <li id="langegger2009xlwrap" role="doc-biblioentry"><p>Andreas Langegger and Wolfram Woß. 2009. XLWrap–querying and integrating arbitrary spreadsheets with SPARQL. In International Semantic Web Conference. Springer, 359–374</p></li>
                 <li id="stadler2015simplified" role="doc-biblioentry"><p>Claus Stadler, Jorg Unbehauen, Patrick Westphal, Mohamed Ahmed Sherif, and Jens Lehmann. 2015. Simplified RDB2RDF Mapping. In LDOW@WWW</p></li>
-            </ol>
+                <li id="hoekstra2016" role="doc-biblioentry"><p>Hoekstra, R., Merono-Penuela, A., Dentler, K., Rijpma, A., Zijdeman, R., & Zandhuis, I. (2016, May). An ecosystem for linked humanities data. In International Semantic Web Conference (pp. 425-440). Springer, Cham.</p></li>
+                <li id="knoblock2012" role="doc-biblioentry"><p>Knoblock, C. A., Szekely, P., Ambite, J. L., Gupta, S., Goel, A., Muslea, M., Lerman, K., Taheriyan, M., and Mallick, P (2012, May). Semi-automatically mapping structured sources into the semantic web. In Extended Semantic Web Conference (pp. 375-390). Springer, Berlin, Heidelberg.</p></li>
+                <li id="tennison2015" role="doc-biblioentry"><p>Tennison, J., Kellogg, G., and Herman, I. (2015). Model for tabular data and metadata on the web. W3C recommendation. World Wide Web Consortium (W3C).</p></li>
+            </ol>  
         </section>
 
-
-
-        
+       
         <!-- Footnotes -->
         <section id="fnlist" role="doc-endnotes">
             
@@ -443,85 +433,20 @@ rr:predicateObjectMap[
             <section id="morph-rdb" role="doc-endnote">
                 <p> <a href="https://github.com/oeg-upm/morph-rdb ">https://github.com/oeg-upm/morph-rdb </a></p>
             </section>
-
+            <section id="rmlc-statistic" role="doc-endnote">
+                <p> <a href="https://github.com/oeg-upm/morph-rdb ">https://github.com/oeg-upm/rmlc-statistic</a></p>
+            </section>
             <section id="fnTabulaJava" role="doc-endnote">
                 <p><a href="https://github.com/tabulapdf/tabula-java">https://github.com/tabulapdf/tabula-java</a></a></p>
             </section>            
             <section id="fnSrilankaPDF" role="doc-endnote">
                 <p><a href="http://www.sltda.lk/statistics">http://www.sltda.lk/statistics</a></a></p>
             </section>          
-            <section id="fnSrilankaCSV" role="doc-endnote">
-                <p><a href="https://github.com/tourism-data/tourism-data.github.io/tree/master/sri-lanka/csv/arrivals-country-month">https://github.com/tourism-data/tourism-data.github.io/tree/master/sri-lanka/csv/arrivals-country-month</a></a></p>
-            </section>
-            <section id="fnSrilankaRDF" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-batch-result.nt">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-batch-result.nt</a></a></p>
-            </section>          
-            <section id="fnSrilankaQ1" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-query1.rq">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-query1.rq</a></a></p>
-            </section>          
-            <section id="fnSrilankaQ1Result" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-query1-result.xml">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-query1-result.xml</a></p>
-            </section>          
-            <section id="fnSrilankaQ2" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-query2.rq">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-query2.rq</a></p>
-            </section>          
-            <section id="fnSrilankaQ2Result" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-query2-result.xml">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-query2-result.xml</a></p>
-            </section>
-            <section id="fnSrilankaQ3" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-query3.rq">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-query3.rq</a></p>
-            </section>          
-            <section id="fnSrilankaQ3Result" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-query3-result.xml">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/2016-P21-naive-query3-result.xml</a></p>
-            </section>
-            <section id="fnSrilankaR2RML" role="doc-endnote">
-                <p><a href="https://github.com/tourism-data/tourism-data.github.io/blob/master/sri-lanka/mappings/arrivals-country-month/2016.ttl">https://github.com/tourism-data/tourism-data.github.io/blob/master/sri-lanka/mappings/arrivals-country-month/2016.ttl</a></p>
-            </section>
-            <section id="fnSrilankaRMLCColumns" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/mappings/2016-P21-columns.rmlc.ttl">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/mappings/2016-P21-columns.rmlc.ttl</a></p>
-            </section>
-            <section id="fnSrilankaRMLCRange" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/mappings/2016-P21-range.rmlc.ttl">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/srilanka-tourism/mappings/2016-P21-range.rmlc.ttl</a></p>
-            </section>
-            
             <section id="fnEuroStat" role="doc-endnote">
                 <p><a href="http://ec.europa.eu/eurostat">http://ec.europa.eu/eurostat</a></p>
             </section>
             <section id="fnEuroStatImmigrationWeb" role="doc-endnote">
                 <p><a href="http://ec.europa.eu/eurostat/product?code=tps00176&mode=view">http://ec.europa.eu/eurostat/product?code=tps00176&mode=view</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationCSV" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration.csv">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration.csv</a></p>
-            </section>                      
-            <section id="fnEuroStatImmigrationRDF" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-batch-result.nt">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-batch-result.nt</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationQ1" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query1.rq">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query1.rq</a></p>
-            </section>          
-            <section id="fnEuroStatImmigrationQ1Result" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query1-result.xml">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query1-result.xml</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationQ2" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query2.rq">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query2.rq</a></p>
-            </section>          
-            <section id="fnEuroStatImmigrationQ2Result" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query2-result.xml">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query2-result.xml</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationQ3" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query3.rq">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query3.rq</a></p>
-            </section>          
-            <section id="fnEuroStatImmigrationQ3Result" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query3-result.xml">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-query3-result.xml</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationR2RML" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-naive.r2rml.tt">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-naive.r2rml.ttl</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationRMLCColumns" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-columns.rmlc.ttl">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-columns.rmlc.ttl</a></p>
-            </section>
-            <section id="fnEuroStatImmigrationRMLCRange" role="doc-endnote">
-                <p><a href="https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-range.rmlc.ttl">https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/eurostat/eurostatimmigration-range.rmlc.ttl</a></p>
             </section>
         </section>
     </body>
