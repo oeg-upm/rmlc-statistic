@@ -20,14 +20,10 @@ the dictionary to replace the values.
 
 ## How to run it?
 ```
-git clone https://github.com/oeg-upm/morph-rdb.git
-cd morph-rdb
-mvn clean install
-cd ..
 git clone https://github.com/oeg-upm/rmlc-statistic.git
 cd rmlc-statistic
 mvn clean install
-java -jar target/rmlc-statistic-1.0.jar -m path -c path [-q path]
+java -jar target/rmlc-statistic-1.0.jar -m path -c path [-r | -q path]
 ```
 Where the arguments are:
 + -m: Absolute path to the mapping with iterators. **Mandatory**

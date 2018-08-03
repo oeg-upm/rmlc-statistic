@@ -14,6 +14,7 @@
 @prefix sltsv: <http://w3id.org/sri-lanka/tourism/cube-vocab/> .
 @prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
+@prefix dpr: <http://dbpedia.org/resource/> .
 prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
 
 <TriplesMap{$alias}>
@@ -43,7 +44,7 @@ prefix rmlc: <http://oeg-upm.net/ns/rmlc#> .
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/{$alias}";
+      rr:constant dpr:{$alias};
     ];
   ];
   

@@ -14,6 +14,7 @@
 @prefix sltsv: <http://w3id.org/sri-lanka/tourism/cube-vocab/> .
 @prefix sltsds: <http://w3id.org/sri-lanka/tourism/cube-data-structure/> . 
 @prefix sltsd: <http://w3id.org/sri-lanka/tourism/dataset/> . 
+@prefix dpr: <http://dbpedia.org/resource/> .
 
 <TriplesMapBelgium>
   # a rr:TriplesMap;
@@ -40,7 +41,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Belgium";
+      rr:constant dpr:Belgium;
     ];
   ];
   
@@ -88,7 +89,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Bulgaria";
+      rr:constant dpr:Bulgaria;
     ];
   ];
   
@@ -136,7 +137,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Czech_Republic";
+      rr:constant dpr:Czech_Republic;
     ];
   ];
   
@@ -184,7 +185,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Denmark";
+      rr:constant dpr:Denmark;
     ];
   ];
   
@@ -232,7 +233,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Germany";
+      rr:constant dpr:Germany;
     ];
   ];
   
@@ -280,7 +281,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Estonia";
+      rr:constant dpr:Estonia;
     ];
   ];
   
@@ -328,7 +329,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Ireland";
+      rr:constant dpr:Ireland;
     ];
   ];
   
@@ -376,7 +377,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Greece";
+      rr:constant dpr:Greece;
     ];
   ];
   
@@ -424,7 +425,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Spain";
+      rr:constant dpr:Spain;
     ];
   ];
   
@@ -472,7 +473,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/France";
+      rr:constant dpr:France;
     ];
   ];
   
@@ -520,7 +521,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Croatia";
+      rr:constant dpr:Croatia;
     ];
   ];
   
@@ -568,7 +569,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Italy";
+      rr:constant dpr:Italy;
     ];
   ];
   
@@ -616,7 +617,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Cyprus";
+      rr:constant dpr:Cyprus;
     ];
   ];
   
@@ -664,7 +665,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Latvia";
+      rr:constant dpr:Latvia;
     ];
   ];
   
@@ -712,7 +713,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Lithuania";
+      rr:constant dpr:Lithuania;
     ];
   ];
   
@@ -760,7 +761,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Luxembourg";
+      rr:constant dpr:Luxembourg;
     ];
   ];
   
@@ -808,7 +809,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Hungary";
+      rr:constant dpr:Hungary;
     ];
   ];
   
@@ -856,7 +857,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Malta";
+      rr:constant dpr:Malta;
     ];
   ];
   
@@ -904,7 +905,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Netherlands";
+      rr:constant dpr:Netherlands;
     ];
   ];
   
@@ -952,7 +953,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Austria";
+      rr:constant dpr:Austria;
     ];
   ];
   
@@ -1000,7 +1001,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Poland";
+      rr:constant dpr:Poland;
     ];
   ];
   
@@ -1048,7 +1049,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Portugal";
+      rr:constant dpr:Portugal;
     ];
   ];
   
@@ -1096,7 +1097,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Romania";
+      rr:constant dpr:Romania;
     ];
   ];
   
@@ -1144,7 +1145,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Slovenia";
+      rr:constant dpr:Slovenia;
     ];
   ];
   
@@ -1192,7 +1193,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Slovakia";
+      rr:constant dpr:Slovakia;
     ];
   ];
   
@@ -1240,7 +1241,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Finland";
+      rr:constant dpr:Finland;
     ];
   ];
   
@@ -1288,7 +1289,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Sweden";
+      rr:constant dpr:Sweden;
     ];
   ];
   
@@ -1336,7 +1337,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/United_Kingdom";
+      rr:constant dpr:United_Kingdom;
     ];
   ];
   
@@ -1384,7 +1385,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Iceland";
+      rr:constant dpr:Iceland;
     ];
   ];
   
@@ -1432,7 +1433,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Liechtenstein";
+      rr:constant dpr:Liechtenstein;
     ];
   ];
   
@@ -1480,7 +1481,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Norway";
+      rr:constant dpr:Norway;
     ];
   ];
   
@@ -1528,7 +1529,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Switzerland";
+      rr:constant dpr:Switzerland;
     ];
   ];
   
@@ -1576,7 +1577,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Former_Yugoslav_Republic_of_Macedonia";
+      rr:constant dpr:Former_Yugoslav_Republic_of_Macedonia;
     ];
   ];
   
@@ -1624,7 +1625,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Belarus";
+      rr:constant dpr:Belarus;
     ];
   ];
   
@@ -1672,7 +1673,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Bosnia_and_Herzegovina";
+      rr:constant dpr:Bosnia_and_Herzegovina;
     ];
   ];
   
@@ -1720,7 +1721,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Moldova";
+      rr:constant dpr:Moldova;
     ];
   ];
   
@@ -1768,7 +1769,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Russia";
+      rr:constant dpr:Russia;
     ];
   ];
   
@@ -1816,7 +1817,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/San_Marino";
+      rr:constant dpr:San_Marino;
     ];
   ];
   
@@ -1864,7 +1865,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Kyrgyzstan";
+      rr:constant dpr:Kyrgyzstan;
     ];
   ];
   
@@ -1912,7 +1913,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Tajikistan";
+      rr:constant dpr:Tajikistan;
     ];
   ];
   
@@ -1960,7 +1961,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Uzbekistan";
+      rr:constant dpr:Uzbekistan;
     ];
   ];
   
@@ -2008,7 +2009,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Armenia";
+      rr:constant dpr:Armenia;
     ];
   ];
   
@@ -2056,7 +2057,7 @@
     rr:predicate ex:destinationCountry;
     rr:objectMap [
     rr:termType rr:IRI;
-      rr:constant "http://dbpedia.org/resource/Azerbaijan";
+      rr:constant dpr:Azerbaijan;
     ];
   ];
   
