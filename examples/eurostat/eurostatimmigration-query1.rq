@@ -8,7 +8,7 @@ PREFIX ex: <http://example.com/>
 SELECT *
 WHERE { 
 	?obs a qb:Observation .
-	?obs ex:destinationCountry	dpr:Spain .
+	?obs ex:destinationCountry	"http://dbpedia.org/resource/Spain" .
 	?obs ex:year	?year .
 	?obs ex:numberOfImmigrants	?noOfImmigrants .
 
