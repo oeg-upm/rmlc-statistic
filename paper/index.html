@@ -36,7 +36,7 @@ Under the following terms:
         <!-- /END Visualisation requirements (mandatory for optimal reading) -->
         
         <!-- Metadata -->
-        <title property="dcterms:title">Virtual Statistical Knowledge Graph Generation from CSV files</title>
+        <title property="dcterms:title">Virtual Statistical Knowledge Graph Generation from CSV files*</title>
         
         <!-- Author's data (one or more) -->
         <meta about="#author-1" name="dc.creator" content="David Chaves-Fraga"/>
@@ -71,7 +71,7 @@ Under the following terms:
         <!-- Abstract -->
         <section role="doc-abstract">
             <h1>Abstract</h1>
-            <p>Statistics data is often published as tabular data by statistics offices and governmental agencies. In last years, many of these institutions have addressed an interoperable way of releasing their data, by means of semantic technologies. Existing approaches normally employ ad-hoc techniques to transform this tabular data to the Statistics Knowledge Graph (SKG) and materialize it. This approach imposes the need of periodical maintenance to ensure the synchronization between the dataset and the transformation result. Using R2RML, the W3C mapping language recommendation, the generation of virtual SKG is possible thanks to the capability of its processors. However, as the size of the R2RML mapping documents depends on the number of columns in the tabular data and the number of dimensions to be generated, it may be prohibitively large, hindering its maintenance. In this paper we propose an approach to reduce the size of the mapping document by extending RMLC, a mapping language for tabular data. We provide a mapping translator from RMLC to R2RML and a comparative analysis over two different real statistics datasets<a href="#pubBestPaper"></a>.<p> 
+            <p>Statistics data is often published as tabular data by statistics offices and governmental agencies. In last years, many of these institutions have addressed an interoperable way of releasing their data, by means of semantic technologies. Existing approaches normally employ ad-hoc techniques to transform this tabular data to the Statistics Knowledge Graph (SKG) and materialize it. This approach imposes the need of periodical maintenance to ensure the synchronization between the dataset and the transformation result. Using R2RML, the W3C mapping language recommendation, the generation of virtual SKG is possible thanks to the capability of its processors. However, as the size of the R2RML mapping documents depends on the number of columns in the tabular data and the number of dimensions to be generated, it may be prohibitively large, hindering its maintenance. In this paper we propose an approach to reduce the size of the mapping document by extending RMLC, a mapping language for tabular data. We provide a mapping translator from RMLC to R2RML and a comparative analysis over two different real statistics datasets.<p> 
         </section>
         
         <!-- Sections -->
@@ -403,10 +403,7 @@ rr:predicateObjectMap[
 
        
         <!-- Footnotes -->
-        <section id="fnlist" role="doc-endnotes">
-            <section id="pubBestPaper" role="doc-endnote">
-                <p>This work will be published as part of the book “Emerging Topics in Semantic Technologies. ISWC 2018 Satellite Events. E. Demidova, A.J. Zaveri, E. Simperl (Eds.), ISBN: 978-3-89838-736-1, 2018, AKA Verlag Berlin”.</p>
-            </section>
+        <section id="fnlist" role="doc-endnotes">            
             <section id="rmlc" role="doc-endnote">
                 <p> <a href="https://github.com/RMLCio">https://github.com/RMLCio</a></p>
             </section>
@@ -446,6 +443,12 @@ rr:predicateObjectMap[
             <section id="fnEuroStatImmigrationWeb" role="doc-endnote">
                 <p><a href="http://ec.europa.eu/eurostat/product?code=tps00176&mode=view">http://ec.europa.eu/eurostat/product?code=tps00176&mode=view</a></p>
             </section>
+            
         </section>
+
+        <section id="bestpaper" role="doc-endnoite" style="margin-top:00px;margin-bottom: 70px">
+           		<p>* This work will be published as part of the book “Emerging Topics in Semantic Technologies. ISWC 2018 Satellite Events. E. Demidova, A.J. Zaveri, E. Simperl (Eds.), ISBN: 978-3-89838-736-1, 2018, AKA Verlag Berlin”.</p>
+           </section>
+
     </body>
 </html>
