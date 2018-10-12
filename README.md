@@ -37,6 +37,6 @@ After the execution, you will find the results in the [examples/results](https:/
 
 ## Scientific Contribution
 
-Check our paper about RMLC Iterator at: https://oeg-upm.github.io/rmlc-statistic/paper/ 
+Check our paper about RMLC Iterator at: http://dchaves.oeg-upm.net/resources/my-papers/virtual-semstat-2018/
 
 The paper has been accepted at SemStats workshop co-located with the 17th International Semantic Web Conference (2018). The work will also be published as part of the book “Emerging Topics in Semantic Technologies. ISWC 2018 Satellite Events. E. Demidova, A.J. Zaveri, E. Simperl (Eds.), ISBN: 978-3-89838-736-1, 2018, AKA Verlag Berlin”.
