@@ -32,7 +32,7 @@ Where the arguments are:
 + -q: Virtualize the data providing an absolute path to a SPARQL query.
 
 
-After the execution, you will find the results in the [examples/results](https://github.com/oeg-upm/rmlc-statistic/blob/master/examples/results) folder.
+After the execution, you will find the results in the mapping folder.
 
 
 ## Scientific Contribution
