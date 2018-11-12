@@ -34,7 +34,7 @@ public class MappingIO {
     public static boolean writeMapping(String path, String content){
         try {
 
-            Files.write(Paths.get(path.split("\\.")[0]+".r2rml.ttl"), content.getBytes());
+            Files.write(Paths.get(path.replace(".rmlc.ttl",".r2rml.ttl")), content.getBytes());
         }catch (IOException e){
             log.error("Error writing the R2RML file: "+e.getMessage());
             return false;

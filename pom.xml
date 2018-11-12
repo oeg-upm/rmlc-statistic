@@ -19,15 +19,10 @@
   </properties>
   <repositories>
     <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-    <repository>
       <id>fpriyatna-external-libs</id>
       <name>fpriyatna External Libraries</name>
       <url>https://raw.github.com/fpriyatna/external-libs/master/</url>
     </repository>
-
   </repositories>
 
   <dependencies>
@@ -80,9 +75,9 @@
     </dependency>
 
     <dependency>
-      <groupId>com.github.dachafra</groupId>
-      <artifactId>morph-rdb</artifactId>
-      <version>master-SNAPSHOT</version>
+      <groupId>es.upm.fi.dia.oeg.morph</groupId>
+      <artifactId>morph-rdb-dist</artifactId>
+      <version>3.9.15</version>
     </dependency>
 
 
