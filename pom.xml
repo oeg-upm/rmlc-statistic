@@ -19,9 +19,8 @@
   </properties>
   <repositories>
     <repository>
-      <id>fpriyatna-external-libs</id>
-      <name>fpriyatna External Libraries</name>
-      <url>https://raw.github.com/fpriyatna/external-libs/master/</url>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
     </repository>
   </repositories>
 
@@ -53,11 +52,6 @@
         <version>1.4</version>
       </dependency>
 
-    <dependency>
-      <groupId>zql</groupId>
-      <artifactId>zql</artifactId>
-      <version>0.1</version>
-    </dependency>
 
     <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
     <dependency>
@@ -75,9 +69,9 @@
     </dependency>
 
     <dependency>
-      <groupId>es.upm.fi.dia.oeg.morph</groupId>
-      <artifactId>morph-rdb-dist</artifactId>
-      <version>3.9.15</version>
+      <groupId>com.github.dachafra</groupId>
+      <artifactId>morph-rdb</artifactId>
+      <version>v3.9.15</version>
     </dependency>
 
 
